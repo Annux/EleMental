@@ -38,6 +38,11 @@
     <scripts name="Enemy">
       <script>scripts\scr_enemy.gml</script>
       <script>scripts\scr_enemy_step.gml</script>
+      <scripts name="FireElemental">
+        <script>scripts\scrFireElementalCreate.gml</script>
+        <script>scripts\scrFireElementalStep.gml</script>
+        <script>scripts\scrFireAlarm0.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Spells">
       <scripts name="Fireball">
@@ -45,17 +50,24 @@
         <script>scripts\scr_fire_step.gml</script>
         <script>scripts\scr_fire_collision.gml</script>
         <script>scripts\scr_fire_destroy.gml</script>
+        <script>scripts\scrEnemyFireCreate.gml</script>
+        <script>scripts\scrEnemyFireStep.gml</script>
+        <script>scripts\scrEnemyFireCollision.gml</script>
       </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
     <objects name="characters">
       <object>objects\obj_character_parent</object>
-      <object>objects\obj_enemy</object>
       <object>objects\obj_player</object>
+      <objects name="enemies">
+        <object>objects\obj_enemy</object>
+        <object>objects\objFireElemental</object>
+      </objects>
     </objects>
     <objects name="spells">
       <object>objects\obj_fire</object>
+      <object>objects\obj_enemy_fire</object>
     </objects>
     <object>objects\obj_target</object>
   </objects>

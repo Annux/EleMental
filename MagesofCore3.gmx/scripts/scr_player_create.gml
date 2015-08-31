@@ -16,6 +16,8 @@ RES = 10 // Resistance: Effect resistance, damage over time reduction
 hpRegen   = END*.025/room_speed // Rate of health recovery
 manaRegen = END*.1/room_speed   // Rate of mana recovery
 Health    = 80+(DEF*2)          // Health. D-doy Duh.
+//////Just a thought, since we're reducing player health, we will want to reset the///
+//////player's health back to the right amount following level completion          ///
 dmgReduc  = 100/(100+DEF)       // % of damage received
 dotReduc  = 100/(100+RES)       // % of dot damage recieved, % of effect duration reduction
 effRes    = 100/(100+(RES/2))   // % chance of ignoring successful effect
