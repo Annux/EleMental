@@ -2,10 +2,14 @@ if (playerAttacking = false)
 {
     if (speed != 0)
     {
-        sprite_index = sprPlayerWalk;   
+        sprite_index = walkAnim;   
     }
     else
     {
-        sprite_index = sprPlayerIdle;   
+        sprite_index = idleAnim;   
     }
+}
+else
+{
+    // Attack sprite
 }
