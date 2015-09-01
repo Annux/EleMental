@@ -21,6 +21,9 @@
       <sprites name="FireElemental">
         <sprite>sprites\sprFireElementalIdle</sprite>
       </sprites>
+      <sprites name="WaterElemental">
+        <sprite>sprites\sprWaterElementalMove</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -41,8 +44,12 @@
       <scripts name="FireElemental">
         <script>scripts\scrFireElementalCreate.gml</script>
         <script>scripts\scrFireElementalStep.gml</script>
-        <script>scripts\scrFireAlarm0.gml</script>
       </scripts>
+      <scripts name="WaterElemental">
+        <script>scripts\scrWaterElementalCreate.gml</script>
+        <script>scripts\scrWaterElementalStep.gml</script>
+      </scripts>
+      <script>scripts\scrEnemyAlarm0.gml</script>
     </scripts>
     <scripts name="Spells">
       <scripts name="Fireball">
@@ -63,6 +70,7 @@
       <objects name="enemies">
         <object>objects\obj_enemy</object>
         <object>objects\objFireElemental</object>
+        <object>objects\objWaterElemental</object>
       </objects>
     </objects>
     <objects name="spells">
