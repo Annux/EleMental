@@ -59,6 +59,7 @@
     <instance objName="obj_enemy" x="640" y="96" name="inst_2D0EC259" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFireElemental" x="64" y="96" name="inst_B30D1B81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWaterElemental" x="896" y="96" name="inst_6C2F6110" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEarthElemental" x="448" y="96" name="inst_4D36347C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
