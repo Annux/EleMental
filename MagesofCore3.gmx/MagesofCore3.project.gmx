@@ -28,8 +28,16 @@
         <sprite>sprites\sprEarthElementalIdle</sprite>
       </sprites>
     </sprites>
+    <sprites name="Overworld">
+      <sprite>sprites\sprNotClearButton</sprite>
+      <sprite>sprites\sprClearedButton</sprite>
+      <sprite>sprites\sprFlash</sprite>
+      <sprite>sprites\sprFade</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bckOverworldMap</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Player">
@@ -57,6 +65,7 @@
         <script>scripts\scrEarthElementalStep.gml</script>
       </scripts>
       <script>scripts\scrEnemyAlarm0.gml</script>
+      <script>scripts\scrEnemyToEnemyCollision.gml</script>
     </scripts>
     <scripts name="Spells">
       <scripts name="Fireball">
@@ -69,12 +78,27 @@
         <script>scripts\scrEnemyFireCollision.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Overworld">
+      <script>scripts\scrOverworldControlCreate.gml</script>
+      <scripts name="Buttons">
+        <script>scripts\scrButtonCreate.gml</script>
+        <script>scripts\scrButtonStep.gml</script>
+        <script>scripts\scrLvl1ButtonEndStep.gml</script>
+      </scripts>
+      <scripts name="Flash/Fade">
+        <script>scripts\scrFlashCreate.gml</script>
+        <script>scripts\scrFlashStep.gml</script>
+        <script>scripts\scrFadeCreate.gml</script>
+        <script>scripts\scrFadeStep.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="characters">
       <object>objects\obj_character_parent</object>
       <object>objects\obj_player</object>
       <objects name="enemies">
+        <object>objects\objElementalParent</object>
         <object>objects\obj_enemy</object>
         <object>objects\objFireElemental</object>
         <object>objects\objWaterElemental</object>
@@ -86,9 +110,17 @@
       <object>objects\obj_enemy_fire</object>
     </objects>
     <object>objects\obj_target</object>
+    <objects name="Overworld">
+      <object>objects\objOverworldController</object>
+      <object>objects\objFlash</object>
+      <object>objects\objFade</object>
+      <object>objects\objLevel1</object>
+      <object>objects\objLevel2</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\OverworldMap</room>
+    <room>rooms\Level1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

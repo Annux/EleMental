@@ -1,0 +1,2 @@
+worldCleared = false;
+worldGoTo = false;
