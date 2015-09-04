@@ -9,16 +9,17 @@ spell_shoot = mouse_check_button_released(mb_left)
 /////////////////////////////////////////////////////////////
 ///////////////////////////ELEMENTS//////////////////////////
 
-/////////-------Fire----------////////////    
+/////////----------Fire----------////////////    
 if(priElem = Fire)
 {
     // Primary Spell
     if(spellType = 1)
     {
-        if(spell_start) || (spell_charge && !instance_exists(obj_fire))
+        if(ballCount <= maxballCount) && (spell_start || spell_charge && !instance_exists(obj_fire))
         {
             newFire = instance_create(spell_xPos, spell_yPos, obj_fire)
-            newFire.caster = obj_player
+            newFire.caster = obj_player.id
+            ballCount += 1
         }
         else if(instance_exists(obj_fire))
         {
@@ -28,8 +29,11 @@ if(priElem = Fire)
                 newFire.direction = image_angle
             }
             else if(spell_shoot)
-                {newFire.shot = true}
+            {
+                newFire.shot = true
+            }
         }
+        
     }
     // Secondary Spell
     else if(spellType = 0)

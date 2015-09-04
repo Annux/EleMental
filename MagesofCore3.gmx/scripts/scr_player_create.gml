@@ -34,7 +34,9 @@ if(accel > maxSpeed)
 
 ////////////// -ELEMENT SETUP- //////////////
 spellType = true // type of spell to cast (true or 1 = primary, false or 0 = secondary)
-curElem = 1
+
+ballCount = 0
+maxballCount = 5
 
 ////////////// -ANIMATION- //////////////
 walkAnim = sprPlayerWalk

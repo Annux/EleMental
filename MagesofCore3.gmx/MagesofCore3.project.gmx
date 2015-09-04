@@ -9,7 +9,6 @@
     <sprites name="Fireball">
       <sprite>sprites\spr_fire_charge</sprite>
       <sprite>sprites\spr_fire_form</sprite>
-      <sprite>sprites\spr_fire_explode</sprite>
     </sprites>
     <sprite>sprites\spr_target</sprite>
     <sprites name="Player">

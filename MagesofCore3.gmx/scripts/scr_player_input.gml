@@ -1,7 +1,7 @@
 priSpell = keyboard_check_pressed(ord('Q'))
 secSpell = keyboard_check_pressed(ord('W'))
 duoSpell = keyboard_check_pressed(ord('E'))
-moveClick = mouse_check_button_pressed(mb_right);
+moveClick = mouse_check_button(mb_right);
 shootClick = mouse_check_button_pressed(mb_left);
     
 //------------------------------------ MOVEMENT ------------------------------------//

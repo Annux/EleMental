@@ -1,10 +1,16 @@
-image_speed = 10;
+POW = 10
+INT = 5
+SPD = 30
+
 HP = 10;
 enemyXp = 10;
+moveSpeed = 5 + (SPD*.15)
 
 isAttacking = false;
 
-targetX = view_xview[0] + random(1024);
-targetY = view_yview[0] + random(768);
+targetX = random(room_width);
+targetY = random(room_height);
 
 alarm[0] = room_speed * 3;
+
+image_speed = 10;

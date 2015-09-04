@@ -23,10 +23,9 @@ maxSize = 4
 
 ///// Formulas /////
 // Note that these formulas are here for reference. Refer to the actual step script to change them in action.
-Damage = dmgBase + (dmgPerGrow*(Size))
-Speed = moveSpeed - (spdPerGrow*(Size))
-
-
+spdMod = 0
+dmgMod = 0
+intMod = 0
 
 //// Animation & Movement ///
 startAni = spr_fire_form

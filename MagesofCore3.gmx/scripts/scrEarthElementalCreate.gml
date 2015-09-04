@@ -5,7 +5,7 @@ image_speed = 0.1;
 
 isAttacking = false;
 
-targetX = view_xview[0] + random(1024);
-targetY = view_yview[0] + random(768);
+targetX = random(room_width);
+targetY = random(room_height);
 
 alarm[0] = room_speed * 3;

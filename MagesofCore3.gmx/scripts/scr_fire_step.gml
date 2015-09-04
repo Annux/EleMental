@@ -1,7 +1,11 @@
 /////////// Caster Stats ///////////////////
 // NOTE: This has to be done in step, not create. Otherwise the fireball wont have a "caster"
-// dmgMod =
-// intMod =
+if(instance_exists(caster))
+{
+    dmgMod = caster.POW/10 + 1    // 1 POW = .1 dmg
+    intMod = .1 + caster.INT/500  // 1 INT = .2% chance
+    spdMod = caster.SPD/10        // 1 SPD = .1 projectile speed
+}
 
 ////////////// ENEMY - Shooting /////////////
 if(caster != obj_player.id) && (!shot)
@@ -33,10 +37,16 @@ else
         image_xscale = Size
         image_yscale = Size
     }
-    Damage = dmgBase + (dmgPerGrow*(Size))        // Damage formula!!!!!
+    Damage = dmgBase + dmgMod*dmgPerGrow*Size        // Damage formula!!!!!
     sprite_index = chargeAni
-    speed = moveSpeed - (spdPerGrow*(Size))       //  Speed formula!!!!!
+    speed = moveSpeed + spdMod - (spdPerGrow*(Size))       //  Speed formula!!!!!
 }
 
 if(x > room_width || x < 0 || y > room_height || y < 0)
-    {instance_destroy()}
+{
+    if(caster = obj_player.id)
+    {
+        obj_player.ballCount -= 1
+    }
+    instance_destroy()
+}
