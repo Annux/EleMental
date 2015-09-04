@@ -19,8 +19,8 @@ image_angle = direction;
         }
         else
         {
-            targetX = view_xview[0] + random(1024);
-            targetY = view_yview[0] + random(768); 
+            targetX = random(room_width);
+            targetY = random(room_height); 
         }
     }
 }

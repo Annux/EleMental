@@ -1,0 +1,1 @@
+parent = obj_player;

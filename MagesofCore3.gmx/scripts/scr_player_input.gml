@@ -19,6 +19,9 @@ if(shootClick)
 {
     instance_deactivate_object(obj_target)
     speed = 0
+    //this is in here just to quicktest new spells, remove later
+    instance_create(x, y, objRockBall);
+    //
 }
 
 // Turning code & acceleration. Don't touch it. It works. Trust me. //

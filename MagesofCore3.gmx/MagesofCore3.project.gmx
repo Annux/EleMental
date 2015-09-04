@@ -6,9 +6,17 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="Fireball">
-      <sprite>sprites\spr_fire_charge</sprite>
-      <sprite>sprites\spr_fire_form</sprite>
+    <sprites name="FireMainSpells">
+      <sprites name="Fireball">
+        <sprite>sprites\spr_fire_charge</sprite>
+        <sprite>sprites\spr_fire_form</sprite>
+      </sprites>
+      <sprites name="Waterball">
+        <sprite>sprites\sprWaterball</sprite>
+      </sprites>
+      <sprites name="Rockball">
+        <sprite>sprites\sprRockball</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_target</sprite>
     <sprites name="Player">
@@ -68,11 +76,19 @@
       <script>scripts\scrEnemyToEnemyCollision.gml</script>
     </scripts>
     <scripts name="Spells">
-      <scripts name="Fireball">
-        <script>scripts\scr_fire_create.gml</script>
-        <script>scripts\scr_fire_step.gml</script>
-        <script>scripts\scr_fire_collision.gml</script>
-        <script>scripts\scr_fire_destroy.gml</script>
+      <scripts name="FireMainSpells">
+        <scripts name="Fireball">
+          <script>scripts\scr_fire_create.gml</script>
+          <script>scripts\scr_fire_step.gml</script>
+          <script>scripts\scr_fire_collision.gml</script>
+          <script>scripts\scr_fire_destroy.gml</script>
+        </scripts>
+        <scripts name="Rockball">
+          <script>scripts\scrRockBallCreate.gml</script>
+          <script>scripts\scrRockBallStep.gml</script>
+          <script>scripts\scrRockballTargetCreate.gml</script>
+          <script>scripts\scrRockballTargetStep.gml</script>
+        </scripts>
       </scripts>
     </scripts>
     <scripts name="Overworld">
@@ -105,7 +121,11 @@
       <object>objects\obj_character_parent</object>
       <object>objects\obj_player</object>
       <objects name="spells">
-        <object>objects\obj_fire</object>
+        <objects name="FireMains">
+          <object>objects\obj_fire</object>
+          <object>objects\objRockBall</object>
+          <object>objects\objRockTarget</object>
+        </objects>
       </objects>
       <object>objects\obj_target</object>
     </objects>
