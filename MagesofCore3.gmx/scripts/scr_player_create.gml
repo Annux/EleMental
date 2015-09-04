@@ -4,20 +4,20 @@
 POW = 10 // Power: Damage dealt
 END = 10 // Endurance: Health regen, Energy regen
 DEF = 10 // Defense: Health, burst damage reduction
-SPD = 5 // Speed: Movement speed, (cooldown reduction?)
+SPD = 5 // Speed: Movement speed, cooldown reduction?
 INT = 10 // Intelligence: Effect chance, effect power
 RES = 10 // Resistance: Effect resistance, damage over time reduction
 
 //////////// -OFFENSIVE STATS- /////////////
-// POW will affect each spell differently
-// INT will affect each spell differently
+// POW & INT will affect each spell differently
+
+cdReduc = 100/(100+(SPD/2)) // duration of spell cooldowns
 
 //////////// -DEFENSIVE STATS- ////////////
+MaxHP     = 80+(DEF*2)
+HP        = MaxHP
 hpRegen   = END*.025/room_speed // Rate of health recovery
 manaRegen = END*.1/room_speed   // Rate of mana recovery
-Health    = 80+(DEF*2)          // Health. D-doy Duh.
-//////Just a thought, since we're reducing player health, we will want to reset the///
-//////player's health back to the right amount following level completion          ///
 dmgReduc  = 100/(100+DEF)       // % of damage received
 dotReduc  = 100/(100+RES)       // % of dot damage recieved, % of effect duration reduction
 effRes    = 100/(100+(RES/2))   // % chance of ignoring successful effect

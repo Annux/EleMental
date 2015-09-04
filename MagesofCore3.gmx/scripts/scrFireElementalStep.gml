@@ -7,7 +7,8 @@ else
 image_angle = direction;
     if (isAttacking = true)
     {
-        instance_create(x, y, obj_enemy_fire);
+        fireball = instance_create(x, y, obj_enemy_fire);
+        fireball.caster = objFireElemental.id;
         isAttacking = false;
     }
     else

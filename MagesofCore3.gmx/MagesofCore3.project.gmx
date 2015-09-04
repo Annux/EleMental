@@ -9,6 +9,7 @@
     <sprites name="Fireball">
       <sprite>sprites\spr_fire_charge</sprite>
       <sprite>sprites\spr_fire_form</sprite>
+      <sprite>sprites\spr_fire_explode</sprite>
     </sprites>
     <sprite>sprites\spr_target</sprite>
     <sprites name="Player">
@@ -73,9 +74,6 @@
         <script>scripts\scr_fire_step.gml</script>
         <script>scripts\scr_fire_collision.gml</script>
         <script>scripts\scr_fire_destroy.gml</script>
-        <script>scripts\scrEnemyFireCreate.gml</script>
-        <script>scripts\scrEnemyFireStep.gml</script>
-        <script>scripts\scrEnemyFireCollision.gml</script>
       </scripts>
     </scripts>
     <scripts name="Overworld">
@@ -94,22 +92,24 @@
     </scripts>
   </scripts>
   <objects name="objects">
-    <objects name="characters">
-      <object>objects\obj_character_parent</object>
-      <object>objects\obj_player</object>
-      <objects name="enemies">
-        <object>objects\objElementalParent</object>
-        <object>objects\obj_enemy</object>
-        <object>objects\objFireElemental</object>
-        <object>objects\objWaterElemental</object>
-        <object>objects\objEarthElemental</object>
+    <objects name="enemies">
+      <object>objects\objElementalParent</object>
+      <object>objects\obj_enemy</object>
+      <object>objects\objFireElemental</object>
+      <object>objects\objWaterElemental</object>
+      <object>objects\objEarthElemental</object>
+      <objects name="enemy spells">
+        <object>objects\obj_enemy_fire</object>
       </objects>
     </objects>
-    <objects name="spells">
-      <object>objects\obj_fire</object>
-      <object>objects\obj_enemy_fire</object>
+    <objects name="player">
+      <object>objects\obj_character_parent</object>
+      <object>objects\obj_player</object>
+      <objects name="spells">
+        <object>objects\obj_fire</object>
+      </objects>
+      <object>objects\obj_target</object>
     </objects>
-    <object>objects\obj_target</object>
     <objects name="Overworld">
       <object>objects\objOverworldController</object>
       <object>objects\objFlash</object>
