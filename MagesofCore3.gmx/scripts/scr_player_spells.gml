@@ -12,31 +12,54 @@ spell_shoot = mouse_check_button_released(mb_left)
 /////////----------Fire----------////////////    
 if(priElem = Fire)
 {
-    // Primary Spell
+    //// Primary Spell ////
     if(spellType = 1)
     {
-        if(ballCount <= maxballCount) && (spell_start || spell_charge && !instance_exists(obj_fire))
+        /// FIREBALL ///
+        if(curElem = 1)
         {
-            newFire = instance_create(spell_xPos, spell_yPos, obj_fire)
-            newFire.caster = obj_player.id
-            ballCount += 1
-        }
-        else if(instance_exists(obj_fire))
-        {
-            if(spell_charge)
+            if(ballCount < maxballCount) && (spell_start) // if there isn't too many balls onscreen and you press shoot, make a fireball
             {
-                newFire.x = spell_xPos; newFire.y = spell_yPos
-                newFire.direction = image_angle
-            }
-            else if(spell_shoot)
-            {
-                newFire.shot = true
+                newFire = instance_create(spell_xPos, spell_yPos, obj_fire)
+                newFire.caster = obj_player.id
+                ballCount += 1
             }
         }
         
+        
+        
+        /// WATERBALL ///
+        else if(curElem = 2)
+        {
+        }
+               
+
+        
+        /// EARTHBALL ///
+        else if(curElem = 3)
+        {
+            if(spell_start) && (ballCount < maxballCount) && (canShoot[Fire,Earth])
+            {
+                newRock = instance_create(x, y, objRockBall);
+                newRock.caster = obj_player.id
+                canShoot[Fire,Earth] = false
+                alarm[1] = rockballCD
+            }
+        }
+        
+        
+        
+        /// AIRBALL ///
+        else if(curElem = 3)
+        {
+        }
+                
+        
+        
     }
-    // Secondary Spell
-    else if(spellType = 0)
+    //// Secondary Spell ////
+    else if(spellType = 2)
     {
     }
+
 }

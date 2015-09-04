@@ -27,6 +27,7 @@ if(!shot)
         image_xscale = Size
         image_yscale = Size
     }
+    direction = point_direction(x, y, mouse_x, mouse_y);
 }
 //////////// PLAYER & ENEMY - Movement Speed, Size, Damage, Terminate on Screen Exit //////////////
 else
@@ -45,8 +46,6 @@ else
 if(x > room_width || x < 0 || y > room_height || y < 0)
 {
     if(caster = obj_player.id)
-    {
-        obj_player.ballCount -= 1
-    }
+        {obj_player.ballCount -= 1}
     instance_destroy()
 }

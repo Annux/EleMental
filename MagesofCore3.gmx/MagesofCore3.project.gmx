@@ -16,6 +16,7 @@
       </sprites>
       <sprites name="Rockball">
         <sprite>sprites\sprRockball</sprite>
+        <sprite>sprites\spr_rocktarget</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\spr_target</sprite>
@@ -88,6 +89,7 @@
           <script>scripts\scrRockBallStep.gml</script>
           <script>scripts\scrRockballTargetCreate.gml</script>
           <script>scripts\scrRockballTargetStep.gml</script>
+          <script>scripts\scrRockBallCollision.gml</script>
         </scripts>
       </scripts>
     </scripts>

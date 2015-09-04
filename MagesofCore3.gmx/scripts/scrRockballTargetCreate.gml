@@ -1,1 +1,1 @@
-parent = obj_player;
+parent = obj_player.id;

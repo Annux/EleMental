@@ -2,7 +2,7 @@ if(shot) && (caster = obj_player.id && other.id != obj_player.id) || (caster != 
 {
     other.HP -= Damage
     if(random(1) <= intMod)
-        {other.Status = 1}
+        {other.Status = effectType}
     if(caster = obj_player.id)
         {
         obj_player.ballCount -= 1

@@ -1,6 +1,12 @@
 priSpell = keyboard_check_pressed(ord('Q'))
 secSpell = keyboard_check_pressed(ord('W'))
 duoSpell = keyboard_check_pressed(ord('E'))
+
+DebugA = keyboard_check_pressed(ord('A')) // Change to Fire 
+DebugS = keyboard_check_pressed(ord('S')) // Change to Water 
+DebugD = keyboard_check_pressed(ord('D')) // Change to Earth
+DebugF = keyboard_check_pressed(ord('F')) // Change to Air
+
 moveClick = mouse_check_button(mb_right);
 shootClick = mouse_check_button_pressed(mb_left);
     
@@ -19,9 +25,6 @@ if(shootClick)
 {
     instance_deactivate_object(obj_target)
     speed = 0
-    //this is in here just to quicktest new spells, remove later
-    instance_create(x, y, objRockBall);
-    //
 }
 
 // Turning code & acceleration. Don't touch it. It works. Trust me. //
@@ -76,17 +79,39 @@ else if(priSpell && spellType != 1)
     {spellType = 1}
 
 // Press W to switch elements
+/*
 if(secSpell && curElem = 1)
 {
-    curElem = 2
+    curElem = secElem
 }
 else if(secSpell && curElem = 2)
 {
-    curElem = 1
+    curElem = priElem
 }
+*/
 
 // Press E to combine elements (somehow?)
+/*
 if(duoSpell)
 {
-    spellType = 3
+    spellType = duoElem
+}
+*/
+
+// DEBUG SHIT
+if(DebugA)
+{
+    curElem = Fire // Press a, shoot fire
+}
+else if(DebugS)
+{
+    curElem = Water  // Press s, shoot water
+}
+else if(DebugD)
+{
+    curElem = Earth  // Press d, shoot earth
+}
+else if(DebugF)
+{
+    curElem = Air  // Press f, shoot air
 }

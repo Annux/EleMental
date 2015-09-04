@@ -38,6 +38,9 @@ spellType = true // type of spell to cast (true or 1 = primary, false or 0 = sec
 ballCount = 0
 maxballCount = 5
 
+rockballCD = room_speed*1.5
+canShoot[Fire,Earth] = true
+
 ////////////// -ANIMATION- //////////////
 walkAnim = sprPlayerWalk
 idleAnim = sprPlayerIdle
