@@ -14,9 +14,14 @@ if(instance_exists(obj_fire))
         newFire.x = spell_xPos; newFire.y = spell_yPos
         newFire.image_angle = image_angle
     }
-    //Shoot fireball
-    else if(spell_shoot)
+}
+
+if(instance_exists(objWaterBall))
+{
+    // Charge waterball
+    if(spell_charge) && place_meeting(x,y,newWater)
     {
-        newFire.shot = true
+        newWater.x = spell_xPos; newWater.y = spell_yPos
+        newWater.image_angle = image_angle
     }
 }

@@ -2,7 +2,7 @@
 if(instance_exists(caster))
 {
     dmgMod = caster.POW*.25 + 1    // 1 POW = .25 dmg
-    intMod = .1 + caster.INT*.003  // 1 INT = .3% chance
+    intMod = effectChance + caster.INT*.002  // 1 INT = .2% chance
     spdMod = caster.SPD*.08        // 1 SPD = .08 projectile speed
 }
 

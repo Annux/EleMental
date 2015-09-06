@@ -1,20 +1,16 @@
 //// General stuff //
-moveSpeed = 15
+moveSpeed = 12
 targetX = obj_player.x + random_range(-100, 100); // only applicable for enemy
 targetY = obj_player.y + random_range(-100, 100); // only applicable for enemy
 shot = false
-shotBut = mouse_check_button_released(mb_left)
-
-if(shotBut)
-    {shot = true}
 
 ///// Effect /////
-dmgBase = .5
-effectType = 1 // Burn Effect?
-effectChance = .1 // likeliness of causing burn
+dmgBase = .25
+effectType = 3 // Deluge/Slow Effect
+effectChance = 2.5 // likeliness of causing burn
 
 ///// Growth /////
-growRate = .05 // rate at which fireball size / damage grows
+growRate = .01 // rate at which waterball grow.
 spdPerGrow = 1 // speed reduction per growth
 Size = 1
 maxSize = 4
@@ -27,9 +23,5 @@ intMod = 0
 Damage = dmgBase
 
 //// Animation & Movement ///
-startAni = spr_fire_form
-chargeAni = spr_fire_charge
-shootAni = spr_fire_charge
-
 image_speed = .5
 image_index = 0

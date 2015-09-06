@@ -21,11 +21,10 @@ if(moveClick)
 }
 
 // Stopping if preparing to shoot //
-if(shootClick)
-{
-    instance_deactivate_object(obj_target)
-    speed = 0
-}
+//if(shootClick)
+//{
+//    instance_deactivate_object(obj_target)
+//}
 
 // Turning code & acceleration. Don't touch it. It works. Trust me. //
 if(instance_exists(obj_target))
@@ -40,10 +39,22 @@ if(instance_exists(obj_target))
             {direction = point_direction(x, y, obj_target.x, obj_target.y)}
         if(obj_target.x - x < 40 && obj_target.x - x > -40 && obj_target.y - y < 40 && obj_target.y - y > -40)
             {speed = reducedSpeed}
+        else if (speed > maxSpeed*3)
+        {
+            speed = maxSpeed*3
+        }
+        else if (speed > maxSpeed)
+        {
+            speed -= accel
+        }
         else if (speed < maxSpeed)
-            {speed += accel}
+        {
+            speed += accel
+        }
         else
-            {speed = maxSpeed}
+        {
+            speed = maxSpeed
+        }
         image_angle = direction
     }
     else if (speed != 0)

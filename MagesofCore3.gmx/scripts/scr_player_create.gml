@@ -16,6 +16,8 @@ cdReduc = 100/(100+(SPD/2)) // duration of spell cooldowns
 //////////// -DEFENSIVE STATS- ////////////
 MaxHP     = 80+(DEF*2)
 HP        = MaxHP
+MaxMP     = 100
+MP        = MaxMP
 hpRegen   = END*.025/room_speed // Rate of health recovery
 manaRegen = END*.1/room_speed   // Rate of mana recovery
 dmgReduc  = 100/(100+DEF)       // % of damage received
@@ -35,11 +37,21 @@ if(accel > maxSpeed)
 ////////////// -ELEMENT SETUP- //////////////
 spellType = true // type of spell to cast (true or 1 = primary, false or 0 = secondary)
 
+shot = false
 ballCount = 0
 maxballCount = 5
+aBallCount = 0
+maxaBallCount = 40
 
 rockballCD = room_speed*1.5
+fireballCD = room_speed*3
+airballCD = room_speed*2
+
+canShoot[Fire,0] = true
+canShoot[Fire,Air] = true
 canShoot[Fire,Earth] = true
+
+setTimer = true
 
 ////////////// -ANIMATION- //////////////
 walkAnim = sprPlayerWalk

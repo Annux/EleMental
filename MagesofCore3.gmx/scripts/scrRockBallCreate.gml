@@ -1,7 +1,8 @@
 //// General stuff //
-moveSpeed = 7
+moveSpeed = 9
 playerX = obj_player.x + random_range(-100, 100); // only applicable for enemy
 playerY = obj_player.y + random_range(-100, 100); // only applicable for enemy
+
 
 target = instance_create(mouse_x, mouse_y, objRockTarget);
 target.parent = self.id;

@@ -16,7 +16,10 @@
       </sprites>
       <sprites name="Rockball">
         <sprite>sprites\sprRockball</sprite>
-        <sprite>sprites\spr_rocktarget</sprite>
+        <sprite>sprites\sprRocktarget</sprite>
+      </sprites>
+      <sprites name="Air">
+        <sprite>sprites\spr_air</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\spr_target</sprite>
@@ -91,6 +94,16 @@
           <script>scripts\scrRockballTargetStep.gml</script>
           <script>scripts\scrRockBallCollision.gml</script>
         </scripts>
+        <scripts name="Waterball">
+          <script>scripts\scrWaterBallCreate.gml</script>
+          <script>scripts\scrWaterBallCollision.gml</script>
+          <script>scripts\scrWaterBallStep.gml</script>
+        </scripts>
+        <scripts name="AirBall">
+          <script>scripts\scrAirBallCollision.gml</script>
+          <script>scripts\scrAirBallStep.gml</script>
+          <script>scripts\scrAirBallCreate.gml</script>
+        </scripts>
       </scripts>
     </scripts>
     <scripts name="Overworld">
@@ -107,7 +120,13 @@
         <script>scripts\scrFadeStep.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Overlord">
+      <script>scripts\debug_draw.gml</script>
+    </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\mainFont</font>
+  </fonts>
   <objects name="objects">
     <objects name="enemies">
       <object>objects\objElementalParent</object>
@@ -127,6 +146,9 @@
           <object>objects\obj_fire</object>
           <object>objects\objRockBall</object>
           <object>objects\objRockTarget</object>
+          <object>objects\objWaterBall</object>
+          <object>objects\objAirTarget</object>
+          <object>objects\objAirBall</object>
         </objects>
       </objects>
       <object>objects\obj_target</object>
@@ -138,6 +160,7 @@
       <object>objects\objLevel1</object>
       <object>objects\objLevel2</object>
     </objects>
+    <object>objects\obj_overlord</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\OverworldMap</room>
