@@ -2,6 +2,7 @@ POW = 10
 INT = 5
 SPD = 30
 
+MaxHP = 10;
 HP = 10;
 enemyXp = 10;
 moveSpeed = 5 + (SPD*.15)

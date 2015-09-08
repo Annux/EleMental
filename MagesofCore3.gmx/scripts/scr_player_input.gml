@@ -126,3 +126,20 @@ else if(DebugF)
 {
     curElem = Air  // Press f, shoot air
 }
+
+if (keyboard_check_pressed(vk_numpad7))
+{
+    priElem = 1;
+}
+else if (keyboard_check_pressed(vk_numpad8))
+{
+    priElem = 2;
+}
+else if (keyboard_check_pressed(vk_numpad4))
+{
+    priElem = 3;
+}
+else if (keyboard_check_pressed(vk_numpad5))
+{
+    priElem = 4;
+}

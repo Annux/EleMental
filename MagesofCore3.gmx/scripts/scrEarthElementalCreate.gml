@@ -1,3 +1,4 @@
+MaxHP = 10;
 HP = 10;
 enemyXp = 10;
 speed = 0;
