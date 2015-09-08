@@ -4,7 +4,7 @@
 POW = 10 // Power: Damage dealt
 END = 10 // Endurance: Health regen, Energy regen
 DEF = 10 // Defense: Health, burst damage reduction
-SPD = 5 // Speed: Movement speed, cooldown reduction?
+SPD = 10 // Speed: Movement speed, cooldown reduction?
 INT = 10 // Intelligence: Effect chance, effect power
 RES = 10 // Resistance: Effect resistance, damage over time reduction
 
@@ -47,9 +47,15 @@ rockballCD = room_speed*1.5
 fireballCD = room_speed*3
 airballCD = room_speed*2
 
-canShoot[Fire,0] = true
-canShoot[Fire,Air] = true
+firepoolCD = room_speed*.8
+watpoolCD  = room_speed*1.5
+
+canShoot[Fire,0]     = true
+canShoot[Fire,Air]   = true
 canShoot[Fire,Earth] = true
+
+canShoot[Water,0]    = true
+canShoot[Water,Fire] = true
 
 setTimer = true
 

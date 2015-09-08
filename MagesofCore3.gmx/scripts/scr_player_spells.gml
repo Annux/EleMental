@@ -105,13 +105,28 @@ else if (priElem = Water)
         /// Fire thingy ///
         if(curElem = 1)
         {
-
+            if(canShoot[Water,Fire]) && (spell_start)
+            {
+                newWatpool = instance_create(mouse_x, mouse_y, objFirepool)
+                newWatpool.caster = id
+                speed = 0
+                instance_deactivate_object(obj_target)
+                alarm[4] = watpoolCD
+            }
         }
         
       
         /// Water thingy ///
         else if(curElem = 2)
         {
+            if(canShoot[Water,0]) && (spell_start)
+            {
+                newWatpool = instance_create(mouse_x, mouse_y, objWaterpool)
+                newWatpool.caster = id
+                speed = 0
+                instance_deactivate_object(obj_target)
+                alarm[5] = firepoolCD
+            }
         }
                
    
