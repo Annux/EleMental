@@ -126,6 +126,10 @@
     <scripts name="Overlord">
       <script>scripts\debug_draw.gml</script>
     </scripts>
+    <scripts name="LevelUpCode">
+      <script>scripts\scrOverwatchCreate.gml</script>
+      <script>scripts\scrOverwatchStep.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\mainFont</font>
@@ -157,6 +161,7 @@
         </objects>
       </objects>
       <object>objects\obj_target</object>
+      <object>objects\objOverwatch</object>
     </objects>
     <objects name="Overworld">
       <object>objects\objOverworldController</object>

@@ -53,6 +53,7 @@
   <instances>
     <instance objName="objOverworldController" x="0" y="0" name="inst_79A9191E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLevel1" x="156" y="601" name="inst_AE6BF75E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objOverwatch" x="32" y="0" name="inst_CBAA8D7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

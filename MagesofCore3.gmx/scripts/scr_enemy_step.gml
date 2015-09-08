@@ -1,2 +1,5 @@
 if(HP < 0)
-    {instance_destroy()}
+{
+    objOverwatch.expGained += 10;
+    instance_destroy();
+}
