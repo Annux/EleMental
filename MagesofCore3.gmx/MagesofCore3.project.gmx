@@ -10,9 +10,11 @@
       <sprites name="Fireball">
         <sprite>sprites\spr_fire_charge</sprite>
         <sprite>sprites\spr_fire_form</sprite>
+        <sprite>sprites\sprFBExplode</sprite>
       </sprites>
       <sprites name="Waterball">
         <sprite>sprites\sprWaterball</sprite>
+        <sprite>sprites\sprWBexplode</sprite>
       </sprites>
       <sprites name="Rockball">
         <sprite>sprites\sprRockball</sprite>
@@ -98,6 +100,7 @@
           <script>scripts\scrWaterBallCreate.gml</script>
           <script>scripts\scrWaterBallCollision.gml</script>
           <script>scripts\scrWaterBallStep.gml</script>
+          <script>scripts\scrWaterBallExplode.gml</script>
         </scripts>
         <scripts name="AirBall">
           <script>scripts\scrAirBallCollision.gml</script>
@@ -149,6 +152,8 @@
           <object>objects\objWaterBall</object>
           <object>objects\objAirTarget</object>
           <object>objects\objAirBall</object>
+          <object>objects\objWaterExplosion</object>
+          <object>objects\objFireExplosion</object>
         </objects>
       </objects>
       <object>objects\obj_target</object>
