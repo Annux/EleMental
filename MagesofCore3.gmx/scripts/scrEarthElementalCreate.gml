@@ -1,7 +1,7 @@
 MaxHP = 10;
 HP = 10;
 enemyXp = 10;
-speed = 0;
+rSpeed = 0;
 image_speed = 0.1;
 
 isAttacking = false;

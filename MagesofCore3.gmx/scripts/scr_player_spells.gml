@@ -31,8 +31,9 @@ if(priElem = Fire)
                 newFire = instance_create(spell_xPos, spell_yPos, obj_fire)
                 newFire.caster = id
                 ballCount += 1
-                speed = 0
                 instance_deactivate_object(obj_target)
+                if(path_exists(movePath))
+                    {path_delete(movePath)}
             }
         }
         
@@ -43,8 +44,9 @@ if(priElem = Fire)
             {
                 newWater = instance_create(spell_xPos, spell_yPos, objWaterBall)
                 newWater.caster = id
-                speed = 0
                 instance_deactivate_object(obj_target)
+                if(path_exists(movePath))
+                    {path_delete(movePath)}
             }
         }
                
@@ -58,8 +60,9 @@ if(priElem = Fire)
                 newRock.caster = id
                 canShoot[Fire,Earth] = false
                 alarm[1] = rockballCD
-                speed = 0
                 instance_deactivate_object(obj_target)
+                if(path_exists(movePath))
+                    {path_delete(movePath)}
             }
         }
            
@@ -75,7 +78,7 @@ if(priElem = Fire)
             {
                 newAir = instance_create(spell_xPos, spell_yPos, objAirBall)
                 newAir.caster = id
-                speed *= 1.5
+                pSpeed *= 1.5
                 aBallCount += 1
             }
             
@@ -110,8 +113,7 @@ else if (priElem = Water)
                 instance_deactivate_object(objFirepool)
                 newFirepool = instance_create(mouse_x, mouse_y, objFirepool)
                 newFirepool.caster = id
-                speed = 0
-                instance_deactivate_object(obj_target)
+                pSpeed *= .5
                 alarm[4] = firepoolCD
                 canShoot[Water,Fire] = false
             }
@@ -125,8 +127,10 @@ else if (priElem = Water)
             {
                 newWatpool = instance_create(mouse_x, mouse_y, objWaterpool)
                 newWatpool.caster = id
-                speed = 0
+                pSpeed *= .5
                 instance_deactivate_object(obj_target)
+                if(path_exists(movePath))
+                    {path_delete(movePath)}
                 alarm[5] = waterpoolCD
                 canShoot[Water,0] = false
             }

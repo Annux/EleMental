@@ -72,6 +72,7 @@
       <script>scripts\scr_elements.gml</script>
       <script>scripts\scr_player_input.gml</script>
       <script>scripts\scrPlayerAnimStep.gml</script>
+      <script>scripts\path_to_point.gml</script>
     </scripts>
     <scripts name="Enemy">
       <script>scripts\scr_enemy.gml</script>
@@ -209,6 +210,7 @@
       <object>objects\objLevel2</object>
     </objects>
     <object>objects\obj_overlord</object>
+    <object>objects\obj_collision_parent</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\OverworldMap</room>

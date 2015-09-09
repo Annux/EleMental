@@ -34,3 +34,44 @@ if(instance_exists(objWaterBall))
         newWater.image_angle = image_angle
     }
 }
+
+
+if(instance_exists(obj_target))
+{
+    // Pathing code. Dont touch this either or we are all doomed//
+    if((obj_target.x - x > 10 || obj_target.x - x < -10 || obj_target.y - y > 10 || obj_target.y - y < -10)) // if not at target, set speed
+    {
+        if (pSpeed > maxSpeed*3)
+            {pSpeed = maxSpeed*3}
+        else if (pSpeed > maxSpeed + 1)
+            {pSpeed -= accel}
+        else if (pSpeed < maxSpeed)
+            {pSpeed += accel}
+        else
+            {pSpeed = maxSpeed}
+    }
+    else if (pSpeed != 0) // if at target, stop moving
+    {
+        pSpeed = 0
+    }
+    //walk on path
+    path_to_point(self.id, obj_target.x, obj_target.y, pSpeed)
+    if(pSpeed = 0)
+        {instance_deactivate_object(obj_target)}
+    image_angle = direction
+}
+else if(pSpeed = 0)
+{
+     // aim where the mouse is pointing if not moving //
+    image_angle = point_direction(x,y, mouse_x, mouse_y)
+}
+
+// Dont allow the player to move past the screen edge //
+if (x < 0)
+    {x = 0}
+if (x > room_width)
+    {x = room_width}
+if (y < 0)
+    {y = 0}
+if (y > room_height)
+    {y = room_height}

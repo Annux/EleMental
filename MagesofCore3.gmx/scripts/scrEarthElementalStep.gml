@@ -15,7 +15,7 @@ image_angle = direction;
     {
         if (position_empty(targetX, targetY))
         {
-            move_towards_point(targetX, targetY, speed);
+            path_to_point(self.id, targetX, targetY, rSpeed)
         }
         else
         {
@@ -25,14 +25,14 @@ image_angle = direction;
     }
     if (image_index = 1) || (image_index = 4)
     {
-        speed = 4;
+        rSpeed = 4;
     }
     if (image_index = 2) || (image_index = 5)
     {
-        speed = 2;
+        rSpeed = 2;
     }
     else
     {
-        speed = 1;
+        rSpeed = 1;
     }
 }

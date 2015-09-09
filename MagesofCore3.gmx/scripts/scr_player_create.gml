@@ -27,6 +27,7 @@ effRes    = 100/(100+(RES/2))   // % chance of ignoring successful effect
 Status    = 0 // State. We'll have to decide what numbers mean what (1 = Slowed, 2 = Stunned, etc)
 
 ////////////// -MOVEMENT STATS- //////////////
+pSpeed = 0
 turnSpeed = 10 + (SPD*.1)
 maxSpeed = 5 + (SPD*.15)
 reducedSpeed = maxSpeed*.333
@@ -48,7 +49,7 @@ fireballCD = room_speed*3
 airballCD = room_speed*2
 
 firepoolCD = room_speed*.8
-watpoolCD  = room_speed*2
+waterpoolCD  = room_speed*2
 
 canShoot[Fire,0]     = true
 canShoot[Fire,Air]   = true
@@ -64,3 +65,12 @@ walkAnim = sprPlayerWalk
 idleAnim = sprPlayerIdle
 
 playerAttacking = false
+
+
+///////////////////// - PATH SHIT ????????? ??????////
+
+moveGrid = mp_grid_create(0,0,room_width/32, room_height/32, 32, 32);
+//add obstacles to the grid
+mp_grid_add_instances(moveGrid,obj_collision_parent, true);
+//make an empty path
+movePath = path_add();

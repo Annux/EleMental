@@ -16,7 +16,7 @@ image_angle = direction;
     {
         if (position_empty(targetX, targetY))
         {
-            move_towards_point(targetX, targetY, 8);
+            path_to_point(self.id, targetX, targetY, 8);
         }
         else
         {
