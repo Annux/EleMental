@@ -2,7 +2,7 @@
 // NOTE: This has to be done in step, not create. Otherwise the fireball wont have a "caster"
 if(instance_exists(caster))
 {
-    dmgMod = caster.POW*.01
+    dmgMod = caster.POW*.025
     intMod = .5 + caster.INT*.0015  // 1 INT = .15% chance
     spdMod = caster.SPD*.1        // 1 SPD = .1 projectile speed
 }
@@ -13,6 +13,7 @@ if(instance_exists(caster))
 
 if(death)
 {
+    canHit = false
     Size *= .9
     if(Size < .01)
         {instance_destroy()}

@@ -20,4 +20,5 @@ intMod = 0
 Damage = .00025
 
 //// Animation & Movement ///
-alarm[0] = room_speed*2
+Timer0 = room_speed*2
+alarm[0] = Timer0

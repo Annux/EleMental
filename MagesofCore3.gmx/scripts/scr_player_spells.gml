@@ -102,21 +102,23 @@ else if (priElem = Water)
     //// Primary Spell ////
     if(spellType = 1)
     {
-        /// Fire thingy ///
+        /// Fire Pool ///
         if(curElem = 1)
         {
             if(canShoot[Water,Fire]) && (spell_start)
             {
-                newWatpool = instance_create(mouse_x, mouse_y, objFirepool)
-                newWatpool.caster = id
+                instance_deactivate_object(objFirepool)
+                newFirepool = instance_create(mouse_x, mouse_y, objFirepool)
+                newFirepool.caster = id
                 speed = 0
                 instance_deactivate_object(obj_target)
-                alarm[4] = watpoolCD
+                alarm[4] = firepoolCD
+                canShoot[Water,Fire] = false
             }
         }
         
       
-        /// Water thingy ///
+        /// Water Pool ///
         else if(curElem = 2)
         {
             if(canShoot[Water,0]) && (spell_start)
@@ -125,7 +127,8 @@ else if (priElem = Water)
                 newWatpool.caster = id
                 speed = 0
                 instance_deactivate_object(obj_target)
-                alarm[5] = firepoolCD
+                alarm[5] = waterpoolCD
+                canShoot[Water,0] = false
             }
         }
                

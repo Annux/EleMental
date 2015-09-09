@@ -19,7 +19,7 @@ HP        = MaxHP
 MaxMP     = 100
 MP        = MaxMP
 hpRegen   = END*.025/room_speed // Rate of health recovery
-manaRegen = END*.1/room_speed   // Rate of mana recovery
+mpRegen = END*.1/room_speed   // Rate of mana recovery
 dmgReduc  = 100/(100+DEF)       // % of damage received
 dotReduc  = 100/(100+RES)       // % of dot damage recieved, % of effect duration reduction
 effRes    = 100/(100+(RES/2))   // % chance of ignoring successful effect
@@ -48,7 +48,7 @@ fireballCD = room_speed*3
 airballCD = room_speed*2
 
 firepoolCD = room_speed*.8
-watpoolCD  = room_speed*1.5
+watpoolCD  = room_speed*2
 
 canShoot[Fire,0]     = true
 canShoot[Fire,Air]   = true

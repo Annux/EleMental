@@ -1,4 +1,8 @@
-if HP <= 0
+if HP > MaxHP
+{
+    HP = MaxHP
+}
+else if HP <= 0
 {
     // GAME. OVER.
 }

@@ -7,7 +7,7 @@ growing = false
 ///// Effect /////
 effectType = 1 // Burn Effect
 
-damageMultiplyRate = 1.5 
+damageMultiplyRate = 2
 
 ///// Growth /////
 caster = 0
