@@ -51,6 +51,11 @@
     <sprites name="AirMainSpells">
       <sprite>sprites\sprAirCutter</sprite>
     </sprites>
+    <sprites name="WaterMainSpells">
+      <sprite>sprites\spr_firepool</sprite>
+      <sprite>sprites\spr_waterpool</sprite>
+      <sprite>sprites\spr_firepool_inert</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bckOverworldMap</background>
@@ -120,6 +125,18 @@
         <script>scripts\scrAirCutterStep.gml</script>
         <script>scripts\scrAirCutterCollision.gml</script>
       </scripts>
+      <scripts name="WatMainSpells">
+        <scripts name="Waterpool">
+          <script>scripts\scr_watpool_collision.gml</script>
+          <script>scripts\scr_watpool_step.gml</script>
+          <script>scripts\scr_watpool_create.gml</script>
+        </scripts>
+        <scripts name="Firepool">
+          <script>scripts\scr_firepool_step.gml</script>
+          <script>scripts\scr_firepool_collision.gml</script>
+          <script>scripts\scr_firepool_create.gml</script>
+        </scripts>
+      </scripts>
     </scripts>
     <scripts name="Overworld">
       <script>scripts\scrOverworldControlCreate.gml</script>
@@ -173,6 +190,10 @@
         </objects>
         <objects name="AirMains">
           <object>objects\objAirCutter</object>
+        </objects>
+        <objects name="WatMains">
+          <object>objects\objFirepool</object>
+          <object>objects\objWaterpool</object>
         </objects>
       </objects>
       <object>objects\obj_target</object>
