@@ -176,6 +176,10 @@ else if (priElem = Air)
         /// Water thingy ///
         else if(curElem = 2)
         {
+            if (spell_start)
+            {
+            instance_create(x, y, objBubbleMine);
+            }
         }
                
    

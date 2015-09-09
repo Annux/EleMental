@@ -38,6 +38,9 @@
       </sprites>
       <sprites name="AirMainSpells">
         <sprite>sprites\sprAirCutter</sprite>
+        <sprites name="BubbleMine">
+          <sprite>sprites\sprBubbleMine</sprite>
+        </sprites>
       </sprites>
       <sprites name="FireMainSpells">
         <sprites name="Fireball">
@@ -124,9 +127,16 @@
         </scripts>
       </scripts>
       <scripts name="AirMainSpells">
-        <script>scripts\scrAirCutterCreate.gml</script>
-        <script>scripts\scrAirCutterStep.gml</script>
-        <script>scripts\scrAirCutterCollision.gml</script>
+        <scripts name="AirCutter">
+          <script>scripts\scrAirCutterCreate.gml</script>
+          <script>scripts\scrAirCutterStep.gml</script>
+          <script>scripts\scrAirCutterCollision.gml</script>
+        </scripts>
+        <scripts name="BubbleMine">
+          <script>scripts\scrBubbleMineCreate.gml</script>
+          <script>scripts\scrBubbleMineStep.gml</script>
+          <script>scripts\scrBubbleMineCollision.gml</script>
+        </scripts>
       </scripts>
       <scripts name="WatMainSpells">
         <scripts name="Waterpool">
@@ -193,6 +203,7 @@
         </objects>
         <objects name="AirMains">
           <object>objects\objAirCutter</object>
+          <object>objects\objBubbleMine</object>
         </objects>
         <objects name="WatMains">
           <object>objects\objFirepool</object>
