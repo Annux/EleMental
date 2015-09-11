@@ -65,6 +65,7 @@ walkAnim = sprPlayerWalk
 idleAnim = sprPlayerIdle
 
 playerAttacking = false
+earthQuake = false;
 
 
 ///////////////////// - PATH SHIT ????????? ??????////

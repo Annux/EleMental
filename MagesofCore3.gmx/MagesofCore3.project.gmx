@@ -60,6 +60,10 @@
           <sprite>sprites\spr_air</sprite>
         </sprites>
       </sprites>
+      <sprites name="EarthMainSpells">
+        <sprite>sprites\sprEarthAttack</sprite>
+        <sprite>sprites\sprAftershock</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -150,6 +154,9 @@
           <script>scripts\scr_firepool_create.gml</script>
         </scripts>
       </scripts>
+      <scripts name="EarthMainSpells">
+        <script>scripts\scrEarthquakeCreate.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Overworld">
       <script>scripts\scrOverworldControlCreate.gml</script>
@@ -208,6 +215,9 @@
         <objects name="WatMains">
           <object>objects\objFirepool</object>
           <object>objects\objWaterpool</object>
+        </objects>
+        <objects name="EarthMains">
+          <object>objects\objAftershock</object>
         </objects>
       </objects>
       <object>objects\obj_target</object>

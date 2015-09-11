@@ -1,4 +1,4 @@
-if (playerAttacking = false)
+if (playerAttacking = false) && (earthQuake = false)
 {
     if (speed != 0)
     {
