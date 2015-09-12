@@ -127,6 +127,7 @@
     <instance objName="obj_ocean" x="2176" y="1792" name="inst_3D9C74F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ocean" x="2304" y="1792" name="inst_6081D29C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ocean" x="2432" y="1792" name="inst_2202ACC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="crabboss" x="2080" y="1152" name="inst_3E9328BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background1" x="0" y="0" w="96" h="32" xo="96" yo="256" id="10003195" name="inst_A54CFB1C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

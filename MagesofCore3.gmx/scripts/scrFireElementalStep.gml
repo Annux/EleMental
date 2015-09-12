@@ -1,6 +1,6 @@
 if (HP <= 0)
 {
-    objOverwatch.expGained += 10;
+    objOverwatch.expGained += enemyXp;
     instance_destroy();
 }
 else if (blownBack = true)
