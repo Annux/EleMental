@@ -72,6 +72,14 @@
       <sprite>sprites\spr_shore</sprite>
       <sprite>sprites\spr_ocean</sprite>
     </sprites>
+    <sprites name="UI">
+      <sprite>sprites\sprMainMenu</sprite>
+      <sprite>sprites\sprStartButton</sprite>
+      <sprite>sprites\sprQuitButton</sprite>
+      <sprite>sprites\sprUnderBackground</sprite>
+      <sprite>sprites\sprStartHilite</sprite>
+      <sprite>sprites\sprQuitHilite</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bckOverworldMap</background>
@@ -194,6 +202,15 @@
       <script>scripts\scrOverwatchCreate.gml</script>
       <script>scripts\scrOverwatchStep.gml</script>
     </scripts>
+    <scripts name="UI">
+      <scripts name="StartMenu">
+        <script>scripts\scrMainMenuCreate.gml</script>
+        <script>scripts\scrStartButtonCreate.gml</script>
+        <script>scripts\scrMainMenuStep.gml</script>
+        <script>scripts\scrStartButtonStep.gml</script>
+        <script>scripts\scrQuitButtonStep.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\mainFont</font>
@@ -252,12 +269,20 @@
       <object>objects\obj_shell</object>
       <object>objects\obj_ocean</object>
     </objects>
+    <objects name="UI">
+      <object>objects\objMainMenuBkg</object>
+      <object>objects\objStartButton</object>
+      <object>objects\objQuitButton</object>
+      <object>objects\objUnderbackground</object>
+    </objects>
     <objects name="Other">
       <object>objects\obj_overlord</object>
       <object>objects\obj_shore</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\MainMenu</room>
+    <room>rooms\PlayerSelectMenu</room>
     <room>rooms\OverworldMap</room>
     <room>rooms\Level1</room>
   </rooms>
