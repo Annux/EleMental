@@ -11,53 +11,43 @@ Cloud           = 9
 Sand            = 10
 
 
-
-//TEMPORARY//TO BE REPLACED BY OVERLORD////TEMPORARY//TO BE REPLACED BY OVERLORD////TEMPORARY//TO BE REPLACED BY OVERLORD////TEMPORARY//TO BE REPLACED BY OVERLORD////TEMPORARY//TO BE REPLACED BY OVERLORD//
-priElem = Water
-secElem = Fire
-curElem = priElem
-//TEMPORARY//TO BE REPLACED BY OVERLORD////TEMPORARY//TO BE REPLACED BY OVERLORD////TEMPORARY//TO BE REPLACED BY OVERLORD////TEMPORARY//TO BE REPLACED BY OVERLORD////TEMPORARY//TO BE REPLACED BY OVERLORD//
-
-
-
-
 ////////////// ELEMENT MIXTURES//////////////
 // Fire + Fire = Plasma //
-// if(priElem = Fire) && (secElem = Fire)
+// if(global.priElem = Fire) && (global.secElem = Fire)
 //    {duoElem = Plasma}
     
 // Fire + Waduo = Dragonbreath //
-if((priElem = Fire || priElem = Water) && (secElem = Fire || secElem = Water))
+if((global.priElem = Fire || global.priElem = Water) && (global.secElem = Fire || global.secElem = Water))
     {duoElem = Dragonbreath}
     
 // Fire + Earth = Meteor //
-else if((priElem = Fire || priElem = Earth) && (secElem = Fire || secElem = Earth))
+else if((global.priElem = Fire || global.priElem = Earth) && (global.secElem = Fire || global.secElem = Earth))
     {duoElem = Meteor}
     
 // Fire + Air = Elecduocity //
-else if((priElem = Fire || priElem = Air) && (secElem = Fire || secElem = Air))
+else if((global.priElem = Fire || global.priElem = Air) && (global.secElem = Fire || global.secElem = Air))
     {duoElem = Elecduocity}
     
 // Waduo + Waduo = Frost //
-// else if(priElem = Waduo) && (secElem = Waduo)
+// else if(global.priElem = Waduo) && (global.secElem = Waduo)
 //    {duoElem = Frost}
     
 // Waduo + Earth = Mud //
-else if((priElem = Water || priElem = Earth) && (secElem = Water || secElem = Earth))
+else if((global.priElem = Water || global.priElem = Earth) && (global.secElem = Water || global.secElem = Earth))
     {duoElem = Mud}
     
 // Waduo + Air = Cloud //
-else if((priElem = Water || priElem = Air) && (secElem = Water || secElem = Air))
+else if((global.priElem = Water || global.priElem = Air) && (global.secElem = Water || global.secElem = Air))
     {duoElem = Cloud}
     
 // Earth + Earth = Iron //
-// else if(priElem = Earth) && (secElem = Earth)
+// else if(global.priElem = Earth) && (global.secElem = Earth)
 //    {duoElem = Dragonbreath}
     
 // Earth + Air = Sand //
-else if((priElem = Earth || priElem = Air) && (secElem = Earth || secElem = Air))
+else if((global.priElem = Earth || global.priElem = Air) && (global.secElem = Earth || global.secElem = Air))
     {duoElem = Sand}
     
 // Air + Air = Energy //
-// else if(priElem = Air) && (secElem = Air)
+// else if(global.priElem = Air) && (global.secElem = Air)
 //    {duoElem = Energy}

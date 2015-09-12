@@ -74,12 +74,37 @@
       <sprite>sprites\spr_ocean</sprite>
     </sprites>
     <sprites name="UI">
-      <sprite>sprites\sprMainMenu</sprite>
-      <sprite>sprites\sprStartButton</sprite>
-      <sprite>sprites\sprQuitButton</sprite>
-      <sprite>sprites\sprUnderBackground</sprite>
-      <sprite>sprites\sprStartHilite</sprite>
-      <sprite>sprites\sprQuitHilite</sprite>
+      <sprites name="StartMenu">
+        <sprite>sprites\sprMainMenu</sprite>
+        <sprite>sprites\sprStartButton</sprite>
+        <sprite>sprites\sprQuitButton</sprite>
+        <sprite>sprites\sprUnderBackground</sprite>
+        <sprite>sprites\sprStartHilite</sprite>
+        <sprite>sprites\sprQuitHilite</sprite>
+      </sprites>
+      <sprites name="SelectionMenu">
+        <sprite>sprites\sprSelectionMenu</sprite>
+        <sprites name="Primary">
+          <sprite>sprites\sprPriFireButton</sprite>
+          <sprite>sprites\sprPriWaterButton</sprite>
+          <sprite>sprites\sprPriEarthButton</sprite>
+          <sprite>sprites\sprPriAirButton</sprite>
+          <sprite>sprites\sprPFBSelected</sprite>
+          <sprite>sprites\sprPWBSelected</sprite>
+          <sprite>sprites\sprPEBSelected</sprite>
+          <sprite>sprites\sprPABSelected</sprite>
+        </sprites>
+        <sprites name="Secondary">
+          <sprite>sprites\sprSecFireButton</sprite>
+          <sprite>sprites\sprSecWaterButton</sprite>
+          <sprite>sprites\sprSecEarthButton</sprite>
+          <sprite>sprites\sprSecAirButton</sprite>
+          <sprite>sprites\sprSFBSelected</sprite>
+          <sprite>sprites\sprSWBSelected</sprite>
+          <sprite>sprites\sprSEBSelected</sprite>
+          <sprite>sprites\sprSABSelected</sprite>
+        </sprites>
+      </sprites>
     </sprites>
     <sprites name="Boss">
       <sprite>sprites\spr_craboss</sprite>
@@ -217,6 +242,17 @@
         <script>scripts\scrStartButtonStep.gml</script>
         <script>scripts\scrQuitButtonStep.gml</script>
       </scripts>
+      <scripts name="SelectionMenu">
+        <script>scripts\scrPlayerContainerCreate.gml</script>
+        <script>scripts\scrPFBStep.gml</script>
+        <script>scripts\scrPWBStep.gml</script>
+        <script>scripts\scrPEBStep.gml</script>
+        <script>scripts\scrPABStep.gml</script>
+        <script>scripts\scrSFBStep.gml</script>
+        <script>scripts\scrSWBStep.gml</script>
+        <script>scripts\scrSEBStep.gml</script>
+        <script>scripts\scrSABStep.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Boss">
       <script>scripts\scr_boss_step.gml</script>
@@ -282,10 +318,23 @@
       <object>objects\obj_ocean</object>
     </objects>
     <objects name="UI">
-      <object>objects\objMainMenuBkg</object>
-      <object>objects\objStartButton</object>
-      <object>objects\objQuitButton</object>
-      <object>objects\objUnderbackground</object>
+      <objects name="StartMenu">
+        <object>objects\objMainMenuBkg</object>
+        <object>objects\objStartButton</object>
+        <object>objects\objQuitButton</object>
+        <object>objects\objUnderbackground</object>
+      </objects>
+      <objects name="SelectionMenu">
+        <object>objects\objSelectionMenu</object>
+        <object>objects\objPriFireButton</object>
+        <object>objects\objPriWaterButton</object>
+        <object>objects\objPriEarthButton</object>
+        <object>objects\objPriAirButton</object>
+        <object>objects\objSecFireButton</object>
+        <object>objects\objSecWaterButton</object>
+        <object>objects\objSecEarthButton</object>
+        <object>objects\objSecAirButton</object>
+      </objects>
     </objects>
     <objects name="Other">
       <object>objects\obj_overlord</object>
