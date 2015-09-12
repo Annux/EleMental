@@ -13,7 +13,7 @@ if (buttonActive = true)
         sprite_index = sprStartHilite;
         if (mouse_check_button_pressed(mb_left))
         {
-            room_goto(OverworldMap);
+            room_goto(PlayerSelectMenu);
         }
     }
     else

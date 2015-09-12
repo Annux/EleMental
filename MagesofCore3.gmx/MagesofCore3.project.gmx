@@ -104,6 +104,10 @@
           <sprite>sprites\sprSEBSelected</sprite>
           <sprite>sprites\sprSABSelected</sprite>
         </sprites>
+        <sprite>sprites\sprSelStartButton</sprite>
+        <sprite>sprites\sprSelStartHilite</sprite>
+        <sprite>sprites\sprSelBackButton</sprite>
+        <sprite>sprites\sprSelBackHilite</sprite>
       </sprites>
     </sprites>
     <sprites name="Boss">
@@ -246,14 +250,25 @@
       </scripts>
       <scripts name="SelectionMenu">
         <script>scripts\scrPlayerContainerCreate.gml</script>
-        <script>scripts\scrPFBStep.gml</script>
-        <script>scripts\scrPWBStep.gml</script>
-        <script>scripts\scrPEBStep.gml</script>
-        <script>scripts\scrPABStep.gml</script>
-        <script>scripts\scrSFBStep.gml</script>
-        <script>scripts\scrSWBStep.gml</script>
-        <script>scripts\scrSEBStep.gml</script>
-        <script>scripts\scrSABStep.gml</script>
+        <script>scripts\scrSelectButtonsCreate.gml</script>
+        <script>scripts\scrButtonsPressedCreate.gml</script>
+        <script>scripts\scrSelMoveButtonCreate.gml</script>
+        <script>scripts\scrSelStartButtonStep.gml</script>
+        <script>scripts\scrSelBackButtonStep.gml</script>
+        <scripts name="Primary">
+          <script>scripts\scrPFBStep.gml</script>
+          <script>scripts\scrPWBStep.gml</script>
+          <script>scripts\scrPEBStep.gml</script>
+          <script>scripts\scrPABStep.gml</script>
+        </scripts>
+        <scripts name="Secondary">
+          <script>scripts\scrSFBStep.gml</script>
+          <script>scripts\scrSWBStep.gml</script>
+          <script>scripts\scrSEBStep.gml</script>
+          <script>scripts\scrSABStep.gml</script>
+        </scripts>
+        <script>scripts\scrFadeMaskCreate.gml</script>
+        <script>scripts\scrFadeMaskStep.gml</script>
       </scripts>
     </scripts>
     <scripts name="Boss">
@@ -340,6 +355,11 @@
         <object>objects\objSecWaterButton</object>
         <object>objects\objSecEarthButton</object>
         <object>objects\objSecAirButton</object>
+        <object>objects\objButtonsPressed</object>
+        <object>objects\objSelButtonParent</object>
+        <object>objects\objSelStartButton</object>
+        <object>objects\objSelBackButton</object>
+        <object>objects\objFadeMask</object>
       </objects>
     </objects>
     <objects name="Other">

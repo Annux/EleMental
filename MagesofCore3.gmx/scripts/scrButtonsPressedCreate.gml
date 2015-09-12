@@ -1,0 +1,2 @@
+buttonOnePressed = false;
+buttonTwoPressed = false;

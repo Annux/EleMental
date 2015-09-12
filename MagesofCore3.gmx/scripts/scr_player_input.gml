@@ -9,6 +9,8 @@ DebugF = keyboard_check_pressed(ord('F')) // Change to Air
 
 moveClick = mouse_check_button(mb_right);
 shootClick = mouse_check_button_pressed(mb_left);
+
+spellSwitch = keyboard_check_pressed(vk_space);
     
 //keep the player from moving when running the earth attack
 if (sprite_index = sprEarthAttack)
@@ -37,6 +39,14 @@ if(moveClick)
 
 
 //------------------------------------ SPELL SELECTION ------------------------------------//
+
+//implemented to swap between spell options, relates to variables in player create//
+if (spellSwitch)
+{
+    limboElem = curElem;
+    curElem = heldElem;
+    heldElem = limboElem;
+}
 
 // Press Q to switch spells
 if(priSpell && spellType = 1)

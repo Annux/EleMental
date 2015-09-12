@@ -70,3 +70,8 @@ earthQuake = false;
 
 
 movePath = path_add();
+
+//these allow the player to switch between spells; more in player input//
+curElem = global.priElem;
+heldElem = global.secElem;
+limboElem = 0;
