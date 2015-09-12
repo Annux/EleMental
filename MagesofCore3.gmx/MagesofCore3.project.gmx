@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -79,6 +80,12 @@
       <sprite>sprites\sprUnderBackground</sprite>
       <sprite>sprites\sprStartHilite</sprite>
       <sprite>sprites\sprQuitHilite</sprite>
+    </sprites>
+    <sprites name="Boss">
+      <sprite>sprites\spr_craboss</sprite>
+      <sprite>sprites\spr_claw_strike</sprite>
+      <sprite>sprites\spr_claw_start</sprite>
+      <sprite>sprites\spr_claw_close</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -211,6 +218,11 @@
         <script>scripts\scrQuitButtonStep.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Boss">
+      <script>scripts\scr_boss_step.gml</script>
+      <script>scripts\scr_boss_create.gml</script>
+      <script>scripts\scr_bos_draw.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\mainFont</font>
@@ -278,6 +290,10 @@
     <objects name="Other">
       <object>objects\obj_overlord</object>
       <object>objects\obj_shore</object>
+    </objects>
+    <objects name="Boss">
+      <object>objects\crabboss</object>
+      <object>objects\obj_claw</object>
     </objects>
   </objects>
   <rooms name="rooms">
