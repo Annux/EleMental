@@ -8,28 +8,23 @@ if (HP <= 0)
 }
 
 //////////////// CHASE CODE ///////////////////////
-else if (!collision_circle(x, y, 250, obj_player, false, false)) && (!Fightmode)
+else if (!collision_circle(x, y, 250, obj_player, false, false)) && (!Fightmode) && (!Attacking)
 {
-    path_to_point(self.id, player_x, player_y, bSpeed)
-    if(image_angle > direction - 85 && image_angle < direction + 85)
+    if(direction > point_direction(x,y,player_x,player_y)+10 || direction < point_direction(x,y,player_x,player_y)-10)
     {
-        image_angle += 5
-        bSpeed = 4
+        bSpeed = 0
+        gradually_turn(self.id, obj_player, 3, 5)
     }
-    else if(image_angle >= direction + 85)
+    else
     {
-        image_angle = direction + 90
-        bSpeed = 4
+        bSpeed = 4.5
+        path_to_point(self.id, player_x, player_y, bSpeed)
     }
-    else if(image_angle <= direction - 85)
-    {
-        image_angle = direction - 90
-        bSpeed = 4
-    }
-    image_speed = 1
+    image_angle = direction - 85
+    image_speed = .75
 }
 //////////////// MELEE DISTANCE CODE ///////////////////////
-else
+else if(!Attacking)
 {
     Fightmode = true
     if(path_exists(movePath))
@@ -40,12 +35,20 @@ else
     bSpeed = 0
     gradually_turn(self.id, obj_player, 2, 1)
     image_angle = direction
-    if(image_angle <= point_direction(x, y, player_x, player_y)+1 && image_angle >= point_direction(x, y, player_x, player_y)-1)
-        {image_speed = 0}
-    else{image_speed = .75}
+    if(image_angle <= point_direction(x, y, player_x, player_y)+.05 && image_angle >= point_direction(x, y, player_x, player_y)-.05)
+    {
+        image_speed = 0
+        Facing = true
+    }
+    else
+    {
+        image_speed = .75
+        Facing = false
+    }
 
     if(!collision_circle(x, y, 500, obj_player, false, false))
     {
+        direction = image_angle + 85
         Fightmode = false
     }
 }
