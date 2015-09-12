@@ -12,6 +12,7 @@ return_Speed = 7.5
 Chicking = false
 Attacking = false
 attack_Charge = false
+attack_Start  = false
 attack_Strike = false
 attack_Finish = false
 attack_Hit = false

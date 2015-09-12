@@ -11,22 +11,19 @@ if(Attacking)
         alarm[1] = attack_Delay
         attack_Start = false
         attack_Charge = true
-        target_x = obj_player.x
-        target_y = obj_player.y
-        instance_create(target_x,target_y,obj_clawtarget)
     }
     else if(attack_Strike)       // TURN DOWN FOR WHAT
     {
         direction = point_direction(x, y, target_x, target_y)
         speed = attack_Speed
         image_angle = direction + 90
-        if(place_meeting(y, x, obj_clawtarget)) || (place_meeting(x, y, obj_player))
+        if(position_meeting(target_x, target_y, self) || place_meeting(x, y, obj_player))
         {
-            attack_Strike = false
             attack_Finish = true
             sprite_index = spr_claw_close
             image_index = 0
             speed = 0
+            attack_Strike = false
         }
     }
 }
@@ -42,6 +39,7 @@ else if(!Idle)
     {
         speed = 0
         Idle = true
+        alarm[0] = random_range(room_speed*.75, room_speed*5)
     }
 }
 
@@ -69,18 +67,18 @@ else if(attack_Strike)
 else if(attack_Finish)
 {
     sprite_index = spr_claw_close
-    if(image_index <= 6)
-        {image_speed = 2}
-    else
+    image_speed = 1
+    if(image_index > 10) // Attack ends
     {
         attack_Finish = false
-        Attacking = false
+        Attacking     = false
         attack_Strike = false
         attack_Charge = false
         sprite_index = spr_claw_chick
         image_index = 0
-        alarm[0] = random_range(room_speed*.75, room_speed*5)
     }
+    else if(image_index > 4)
+        {attack_Hit = true}
 }
 
 if(Chicking) && !(Attacking) && (Idle)

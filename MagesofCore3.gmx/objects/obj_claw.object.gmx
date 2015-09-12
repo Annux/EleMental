@@ -70,6 +70,8 @@
             <string>attack_Charge = false
 attack_Strike = true
 image_index = 0
+target_x = obj_player.x
+target_y = obj_player.y
 </string>
           </argument>
         </arguments>

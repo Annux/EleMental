@@ -18,7 +18,7 @@ maxScale = 3;
 
 
 ///// Modifiers /////
-dmgBase = 2.5
+dmgBase = 2
 spdMod = 0
 dmgMod = 0
 intMod = 0

@@ -4,6 +4,8 @@ player_y = obj_player.y;
 if (HP <= 0)
 {
     objOverwatch.expGained += enemyXp;
+    Lclaw = instance_destroy()
+    Rclaw = instance_destroy()
     instance_destroy();
 }
 
@@ -49,6 +51,7 @@ else if(!Attacking)
     if(!collision_circle(x, y, 500, obj_player, false, false))
     {
         direction = image_angle + 85
+        Facing = false
         Fightmode = false
     }
 }

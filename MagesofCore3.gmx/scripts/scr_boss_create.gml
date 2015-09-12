@@ -1,5 +1,5 @@
 MaxHP = 500;
-HP = 10;
+HP = MaxHP;
 enemyXp = 1000;
 bSpeed = 0;
 
@@ -18,3 +18,5 @@ Rclaw_y = y + lengthdir_y(30, direction - 10)
 
 Lclaw = instance_create(Lclaw_x,Lclaw_y,obj_claw)
 Rclaw = instance_create(Rclaw_x,Rclaw_y,obj_claw)
+
+curClaw = Rclaw

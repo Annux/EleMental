@@ -37,9 +37,9 @@ else if(instance_exists(objRockBall))
     draw_text(nearestRockBall.x,nearestRockBall.y, string(nearestRockBall.Damage))
 }
 
-draw_healthbar  (view_xview[0]+10, view_yview[0]+10, view_xview[0]+3.5*obj_player.MaxHP, view_yview[0]+y+40, obj_player.HP/obj_player.MaxHP*100, c_white, c_red, c_green, 0, true, true)
-draw_healthbar  (view_xview[0]+10, view_yview[0]+50, view_xview[0]+3.5*obj_player.MaxMP, view_yview[0]+y+80, obj_player.MP/obj_player.MaxMP*100, c_white, c_red, c_blue, 0, true, true)
-draw_healthbar (view_xview[0] + 10, view_yview[0] + 90, view_xview[0]+ 350, view_yview[0] + 100, (objOverwatch.currentExp/objOverwatch.i)* 100, c_dkgray, c_green, c_green, 0, true, true);
+draw_healthbar  (view_xview[0]+10, view_yview[0]+10, view_xview[0]+3.5*obj_player.MaxHP, view_yview[0]+y+40, obj_player.HP/obj_player.MaxHP*100, c_white, c_red, c_green, 0, true, true);
+draw_healthbar  (view_xview[0]+10, view_yview[0]+50, view_xview[0]+3.5*obj_player.MaxMP, view_yview[0]+y+80, obj_player.MP/obj_player.MaxMP*100, c_white, c_red, c_blue, 0, true, true);
+draw_healthbar  (view_xview[0]+10, view_yview[0]+90, view_xview[0]+350, view_yview[0] + 100, (objOverwatch.currentExp/objOverwatch.i)* 100, c_dkgray, c_green, c_green, 0, true, true);
 
 if (keyboard_check(vk_numpad0))
 {
