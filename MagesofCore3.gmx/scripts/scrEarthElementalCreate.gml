@@ -5,6 +5,8 @@ rSpeed = 0;
 image_speed = 0.1;
 
 isAttacking = false;
+blownBack = false;
+blowBackCaster = 0;
 
 targetX = random(room_width);
 targetY = random(room_height);

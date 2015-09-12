@@ -8,6 +8,8 @@ enemyXp = 10;
 moveSpeed = 5 + (SPD*.15)
 
 isAttacking = false;
+blownBack = false;
+blowBackCaster = 0;
 
 targetX = random(room_width);
 targetY = random(room_height);

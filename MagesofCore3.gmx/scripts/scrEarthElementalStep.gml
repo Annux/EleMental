@@ -3,6 +3,17 @@ if (HP <= 0)
     objOverwatch.expGained += 10;
     instance_destroy();
 }
+else if (blownBack = true)
+{
+    rSpeed = 0;
+    if(path_exists(movePath))
+        {path_delete(movePath)}
+    move_towards_point(obj_player.x, obj_player.y, -4);
+    if (!instance_exists(blowBackCaster))
+    {
+        blownBack = false;
+    }
+}
 else
 {
 image_angle = direction;

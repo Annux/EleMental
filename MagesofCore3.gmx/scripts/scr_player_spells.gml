@@ -184,15 +184,19 @@ else if (priElem = Earth)
         {
             if (spell_start)
             {
-            sprite_index = sprEarthAttack;
-            earthQuake = true;
+                sprite_index = sprEarthAttack;
+                earthQuake = true;
             }
         }
          
         /// air thingy ///
         else if(curElem = 4)
         {
-            
+            if (spell_start)
+            {
+                forcePush = instance_create (spell_xPos, spell_yPos, objForcePush);
+                forcePush.caster = id;
+            }
         }   
         
     }

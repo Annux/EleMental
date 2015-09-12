@@ -63,6 +63,7 @@
       <sprites name="EarthMainSpells">
         <sprite>sprites\sprEarthAttack</sprite>
         <sprite>sprites\sprAftershock</sprite>
+        <sprite>sprites\sprForcePush</sprite>
       </sprites>
     </sprites>
     <sprites name="Collision Objects">
@@ -162,7 +163,14 @@
         </scripts>
       </scripts>
       <scripts name="EarthMainSpells">
-        <script>scripts\scrEarthquakeCreate.gml</script>
+        <scripts name="Earthquake">
+          <script>scripts\scrEarthquakeCreate.gml</script>
+        </scripts>
+        <scripts name="ForcePush">
+          <script>scripts\scrForcePushCreate.gml</script>
+          <script>scripts\scrForcePushStep.gml</script>
+          <script>scripts\scrForceCollision.gml</script>
+        </scripts>
       </scripts>
     </scripts>
     <scripts name="Overworld">
@@ -225,6 +233,7 @@
         </objects>
         <objects name="EarthMains">
           <object>objects\objAftershock</object>
+          <object>objects\objForcePush</object>
         </objects>
       </objects>
       <object>objects\obj_target</object>
