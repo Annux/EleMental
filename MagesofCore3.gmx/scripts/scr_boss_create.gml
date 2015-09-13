@@ -1,4 +1,6 @@
-MaxHP = 500;
+instance_deactivate_object(objElementalParent)
+
+MaxHP = 100;
 HP = MaxHP;
 enemyXp = 1000;
 bSpeed = 0;

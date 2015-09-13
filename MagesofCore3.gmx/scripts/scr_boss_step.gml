@@ -4,8 +4,8 @@ player_y = obj_player.y;
 if (HP <= 0)
 {
     objOverwatch.expGained += enemyXp;
-    Lclaw = instance_destroy()
-    Rclaw = instance_destroy()
+    instance_deactivate_object(obj_claw)
+    obj_player.LevelComplete = true
     instance_destroy();
 }
 

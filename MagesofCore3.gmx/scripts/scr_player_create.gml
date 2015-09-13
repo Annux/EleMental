@@ -25,6 +25,7 @@ dotReduc  = 100/(100+RES)       // % of dot damage recieved, % of effect duratio
 effRes    = 100/(100+(RES/2))   // % chance of ignoring successful effect
 
 Status    = 0 // State. We'll have to decide what numbers mean what (1 = Slowed, 2 = Stunned, etc)
+LevelComplete = false
 
 ////////////// -MOVEMENT STATS- //////////////
 pSpeed = 0
@@ -69,8 +70,7 @@ earthQuake = false;
 
 //indicates whether or not the player is dying, see player step
 deathAnim = 0;
-
-
+global.DebugMode = false
 movePath = path_add();
 
 //these allow the player to switch between spells; more in player input//

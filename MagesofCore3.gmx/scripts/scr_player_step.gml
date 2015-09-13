@@ -1,3 +1,21 @@
+///STATS///
+MaxHP     = 80+(DEF*2)
+hpRegen   = END*.025/room_speed // Rate of health recovery
+mpRegen = END*.1/room_speed   // Rate of mana recovery
+dmgReduc  = 100/(100+DEF)       // % of damage received
+dotReduc  = 100/(100+RES)       // % of dot damage recieved, % of effect duration reduction
+effRes    = 100/(100+(RES/2))   // % chance of ignoring successful effect
+turnSpeed = 10 + (SPD*.1)
+maxSpeed = 5 + (SPD*.15)
+reducedSpeed = maxSpeed*.333
+accel = .5+((SPD-10)*.05)
+////////
+if(LevelComplete)
+{
+    // animation!?
+}
+
+
 HP += hpRegen
 MP += mpRegen
 

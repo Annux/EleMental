@@ -1,3 +1,6 @@
+Status = 0
+HP = 1
+
 //// General stuff //
 moveSpeed = 9
 playerX = obj_player.x + random_range(-100, 100); // only applicable for enemy

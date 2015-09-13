@@ -1,3 +1,8 @@
+if(HP < 0)
+{
+    instance_destroy()
+}
+
 ///////// Caster Stats /////////
 if(instance_exists(caster))
 {
@@ -31,7 +36,8 @@ else
         }
     }
 }
-if (place_meeting(x, y, target))
+if (place_meeting(x, y, target)) && (!baseRock) && (!place_meeting(x, y, objRockBall))
 {
     baseRock = true;
+    HP = caster.DEF
 }
