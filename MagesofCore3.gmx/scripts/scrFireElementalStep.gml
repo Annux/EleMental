@@ -1,4 +1,4 @@
-if (HP <= 0)
+if (HP <= 0) && (obj_player.image_alpha > 0)
 {
     obj_player.bossSpawnReady += 1;
     objOverwatch.expGained += enemyXp;

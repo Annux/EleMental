@@ -12,6 +12,8 @@
       <sprite>sprites\sprPlayerIdle</sprite>
       <sprite>sprites\sprPlayerWalk</sprite>
       <sprite>sprites\spr_target</sprite>
+      <sprite>sprites\sprPlayerDeathFade</sprite>
+      <sprite>sprites\sprVictoryText</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_enemy</sprite>
@@ -143,6 +145,10 @@
       <script>scripts\scr_player_input.gml</script>
       <script>scripts\scrPlayerAnimStep.gml</script>
       <script>scripts\path_to_point.gml</script>
+      <scripts name="DeathFade">
+        <script>scripts\scrDeathFadeCreate.gml</script>
+        <script>scripts\scrDeathFadeStep.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Enemy">
       <script>scripts\scr_hpDrop_create.gml</script>
@@ -347,6 +353,8 @@
       </objects>
       <object>objects\obj_target</object>
       <object>objects\objOverwatch</object>
+      <object>objects\objDeathFade</object>
+      <object>objects\objGOBackground</object>
     </objects>
     <objects name="Overworld">
       <object>objects\objOverworldController</object>

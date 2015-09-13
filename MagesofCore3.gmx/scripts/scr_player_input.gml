@@ -27,7 +27,7 @@ else
 //------------------------------------ MOVEMENT ------------------------------------//
 
 // Moving by following waypoints set by the mouse //
-if(moveClick)
+if(moveClick)&&(deathAnim = 0)
 {
     if(instance_exists(obj_target))
         {instance_deactivate_object(obj_target)}

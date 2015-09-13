@@ -67,6 +67,8 @@ idleAnim = sprPlayerIdle
 playerAttacking = false
 earthQuake = false;
 
+//indicates whether or not the player is dying, see player step
+deathAnim = 0;
 
 
 movePath = path_add();

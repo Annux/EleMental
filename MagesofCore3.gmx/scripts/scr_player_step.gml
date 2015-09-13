@@ -5,6 +5,22 @@ if HP > MaxHP
     {HP = MaxHP}
 else if HP <= 0
 {
+    image_alpha -= 0.1;
+    image_blend = -1;
+    if (image_alpha <= 0.5)
+    {
+        deathAnim += 1;
+        image_alpha = 1;
+        image_blend = c_red;
+    }
+    if (deathAnim = 3)
+    {
+        instance_create(view_xview[0], view_yview[0], objDeathFade);
+    }
+    if (deathAnim >= 5)
+    {
+        image_alpha = 0;
+    }
     // INSERT GAME. OVER. CODE
 }
 
