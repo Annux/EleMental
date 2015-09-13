@@ -1,12 +1,12 @@
 //////////// -----BASE STATS----- ////////////
 // NOTE: These stats will be directly modified by the player upon certain level-ups
 // they probably wont be these base numbers in the end
-POW = 10 // Power: Damage dealt
-END = 10 // Endurance: Health regen, Energy regen
-DEF = 10 // Defense: Health, burst damage reduction
-SPD = 10 // Speed: Movement speed, cooldown reduction?
-INT = 10 // Intelligence: Effect chance, effect power
-RES = 10 // Resistance: Effect resistance, damage over time reduction
+POW = objOverworldController.POW // Power: Damage dealt
+END = objOverworldController.END // Endurance: Health regen, Energy regen
+DEF = objOverworldController.DEF // Defense: Health, burst damage reduction
+SPD = objOverworldController.SPD // Speed: Movement speed, cooldown reduction?
+INT = objOverworldController.INT // Intelligence: Effect chance, effect power
+RES = objOverworldController.RES // Resistance: Effect resistance, damage over time reduction
 
 //////////// -OFFENSIVE STATS- /////////////
 // POW & INT will affect each spell differently
@@ -46,8 +46,8 @@ aBallCount = 0
 maxaBallCount = 40
 
 rockballCD = room_speed*1.5
-fireballCD = room_speed*3
-airballCD = room_speed*2
+fireballCD = room_speed*2.5
+airballCD = room_speed*1.5
 
 firepoolCD = room_speed*.8
 waterpoolCD  = room_speed*2
@@ -83,6 +83,38 @@ priElem = global.priElem;
 
 //this is how the boss spawner knows when to spawn the boss//
 bossSpawnReady = 0;
-
 //this stops the level complete notification from spawning using player step//
-vicSpawned = 0;
+vicSpawned = 0;// Damage Scripts
+fireDamage  = 0
+earthDamage = 0
+waterDamage = 0
+airDamage   = 0
+
+if(priElem = Fire)
+{
+    fireRatio  = .8
+    earthRatio = 1
+    waterRatio = 1.33
+    airRatio   = 1
+}
+else if(priElem = Water)
+{
+    fireRatio  = 1.25
+    earthRatio = 1
+    waterRatio = .8
+    airRatio   = 1
+}
+else if(priElem = Earth)
+{
+    fireRatio  = .9
+    earthRatio = .75
+    waterRatio = .9
+    airRatio   = 1.25
+}
+else if(priElem = Air)
+{
+    fireRatio  = 1
+    earthRatio = 1.5
+    waterRatio = 1
+    airRatio   = .6
+}

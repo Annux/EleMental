@@ -1,3 +1,6 @@
+if(HP > MaxHP)
+    {HP = MaxHP}
+
 if (HP <= 0)
 {
     obj_player.bossSpawnReady += 1;
@@ -16,6 +19,7 @@ else if (blownBack = true)
 }
 else
 {
+    HP += HP/1000
     image_angle = direction;
     if (isAttacking = true)
     {
@@ -54,3 +58,13 @@ else
         }
     }
 }
+
+//Damage Scripts
+if(fireDamage > 0)
+    {HP -= fireDamage*fireRatio; fireDamage = 0}
+if(waterDamage > 0)
+    {HP -= waterDamage*waterRatio; waterDamage = 0}
+if(earthDamage > 0)
+    {HP -= earthDamage*earthRatio; earthDamage = 0}
+if(airDamage > 0)
+    {HP -= airDamage*airRatio; airDamage = 0}

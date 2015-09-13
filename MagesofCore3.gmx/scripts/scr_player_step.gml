@@ -110,3 +110,15 @@ if (y < 0)
     {y = 0}
 if (y > room_height)
     {y = room_height}
+  
+    
+      
+//Damage Scripts
+if(fireDamage > 0)
+    {HP -= fireDamage*fireRatio*dmgReduc; fireDamage = 0}
+if(waterDamage > 0)
+    {HP -= waterDamage*waterRatio*dotReduc; waterDamage = 0}
+if(earthDamage > 0)
+    {HP -= earthDamage*earthRatio*dmgReduc; earthDamage = 0}
+if(airDamage > 0)
+    {HP -= airDamage*airRatio*dotReduc; airDamage = 0}

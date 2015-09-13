@@ -20,4 +20,3 @@ if (fadeOut = true)
         room_goto(MainMenu);
     }
 }
-

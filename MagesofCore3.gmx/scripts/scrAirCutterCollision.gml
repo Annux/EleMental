@@ -7,6 +7,6 @@ if ((caster = obj_player.id && other.id != obj_player.id) || (caster != obj_play
         {
             Damage = other.MaxHP*0.25;
         }
-        other.HP -= Damage;
+        other.airDamage = Damage
     }
 }

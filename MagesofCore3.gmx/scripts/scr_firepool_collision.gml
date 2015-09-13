@@ -1,6 +1,6 @@
 if(canHit) && ((caster = obj_player.id && other.id != obj_player.id) || (caster != obj_player.id && other.id = obj_player.id))
 {
-    other.HP -= Damage
+    other.fireDamage = Damage
     if(random(1) <= intMod)
         {other.Status = effectType}
     if(!collision)
@@ -10,7 +10,7 @@ if(canHit) && ((caster = obj_player.id && other.id != obj_player.id) || (caster 
 
 if(caster = obj_player.id && other.id = obj_player.id) && (canHit)
 {
-    other.HP -= Damage/2
+    other.fireDamage = Damage/2
     if(!collision)
         {dmgCompound *= damageMultiplyRate}
     collision = true

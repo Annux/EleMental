@@ -1,6 +1,6 @@
 if(caster = obj_player.id && other.id != obj_player.id) || (caster != obj_player.id && other.id = obj_player.id)
 {
-    other.HP -= Damage
+    other.waterDamage = Damage
     if(random(1) <= intMod)
         {other.Status = effectType}
     intMod += effectIncreaseRate

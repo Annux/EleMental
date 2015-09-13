@@ -41,3 +41,6 @@ if (place_meeting(x, y, target)) && (!baseRock) && (!place_meeting(x, y, objRock
     baseRock = true;
     HP = caster.DEF
 }
+
+if(fireDamage > 0)
+    {HP -= fireDamage; fireDamage = 0}

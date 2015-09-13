@@ -49,7 +49,6 @@ if (spellSwitch)
     heldElem = limboElem;
 }
 
-
 if(DebugToggle && !global.DebugMode)
 {
     global.DebugMode = true

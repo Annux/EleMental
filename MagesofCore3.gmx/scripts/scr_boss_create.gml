@@ -22,3 +22,14 @@ Lclaw = instance_create(Lclaw_x,Lclaw_y,obj_claw)
 Rclaw = instance_create(Rclaw_x,Rclaw_y,obj_claw)
 
 curClaw = Rclaw
+
+//Damage Scripts
+fireDamage  = 0
+earthDamage = 0
+waterDamage = 0
+airDamage   = 0
+
+fireRatio  = 1
+earthRatio = 1.2
+waterRatio = .8
+airRatio   = 1

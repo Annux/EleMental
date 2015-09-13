@@ -70,17 +70,33 @@ else if (obj_player.curElem = 4)
 
 draw_healthbar  (view_xview[0]+1000, view_yview[0]+10, view_xview[0] + 1010, view_yview[0] + 100, (obj_player.bossSpawnReady/objOverworldController.levelReq) * 100, c_dkgray, c_yellow, c_red, 3, true, true);
 
+
+if(global.priElem = 1)
+{
+    draw_set_font(ammoFont)
+    if(obj_player.curElem = 1)
+    {
+         draw_text(view_xview[0]+370, view_yview[0] + 30, string(obj_player.maxballCount - obj_player.ballCount));
+    }
+    else if(obj_player.curElem = 4)
+    {
+         draw_text(view_xview[0]+370, view_yview[0] + 30, string(obj_player.maxaBallCount - obj_player.aBallCount));
+    }
+    draw_set_font(mainFont)
+}
+
+///DEBUG DISPLAY///
 if (global.DebugMode)
 {
     draw_set_font(DebugFont)
-    draw_text(view_wview[0]/2, view_hview[0]-50, "DEBUG MODE ")
+    draw_text(view_xview[0] + view_wview[0]/2, view_yview[0] + view_hview[0]-50, "DEBUG MODE")
     draw_set_font(mainFont)
     draw_text(obj_player.x, obj_player.y + 10, "POW: " + string(obj_player.POW));
-    draw_text(obj_player.x, obj_player.y + 20, "END: " + string(obj_player.END));
-    draw_text(obj_player.x, obj_player.y + 30, "DEF: " + string(obj_player.DEF));
-    draw_text(obj_player.x, obj_player.y + 40, "SPD: " + string(obj_player.SPD));
-    draw_text(obj_player.x, obj_player.y + 50, "INT: " + string(obj_player.INT));
-    draw_text(obj_player.x, obj_player.y + 60, "RES: " + string(obj_player.RES));
+    draw_text(obj_player.x, obj_player.y + 22, "END: " + string(obj_player.END));
+    draw_text(obj_player.x, obj_player.y + 34, "DEF: " + string(obj_player.DEF));
+    draw_text(obj_player.x, obj_player.y + 46, "SPD: " + string(obj_player.SPD));
+    draw_text(obj_player.x, obj_player.y + 58, "INT: " + string(obj_player.INT));
+    draw_text(obj_player.x, obj_player.y + 70, "RES: " + string(obj_player.RES));
 
     if(instance_exists(obj_fire))
     {
@@ -102,10 +118,6 @@ if (global.DebugMode)
     {
         draw_text(nearestForcePush.x,nearestForcePush.y, string(nearestForcePush.Damage))
     }
-    else if(instance_exists(objBubbleMine))
-    {
-        draw_text(nearestBubbleMine.x,nearestBubbleMine.y, string(nearestBubbleMine.Damage))
-    }
     else if(instance_exists(objFirepool))
     {
         draw_set_color(c_white)
@@ -121,9 +133,5 @@ if (global.DebugMode)
     else if(instance_exists(objRockBall))
     {
         draw_text(nearestRockBall.x,nearestRockBall.y, string(nearestRockBall.Damage))
-    }
-    else if(instance_exists(objAftershock))
-    {
-        draw_text(nearestAftershock.x,nearestAftershock.y, string(nearestAftershock.Damage))
     }
 }
