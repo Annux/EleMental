@@ -115,6 +115,13 @@
         <sprite>sprites\sprEarthText</sprite>
         <sprite>sprites\sprAirText</sprite>
       </sprites>
+      <sprite>sprites\sprFireworkBlue</sprite>
+      <sprite>sprites\sprFireworkRed</sprite>
+      <sprite>sprites\sprFireworkGreen</sprite>
+      <sprite>sprites\sprAirHUD</sprite>
+      <sprite>sprites\sprEarthHUD</sprite>
+      <sprite>sprites\sprWaterHUD</sprite>
+      <sprite>sprites\sprFireHUD</sprite>
     </sprites>
     <sprites name="Boss">
       <sprite>sprites\spr_craboss</sprite>
@@ -148,6 +155,10 @@
       <scripts name="DeathFade">
         <script>scripts\scrDeathFadeCreate.gml</script>
         <script>scripts\scrDeathFadeStep.gml</script>
+      </scripts>
+      <scripts name="Victory">
+        <script>scripts\scrVictoryCreate.gml</script>
+        <script>scripts\scrVictoryStep.gml</script>
       </scripts>
     </scripts>
     <scripts name="Enemy">
@@ -292,6 +303,8 @@
         <script>scripts\scrEarthTextDraw.gml</script>
         <script>scripts\scrAirTextDraw.gml</script>
       </scripts>
+      <script>scripts\scrFireworkCreate.gml</script>
+      <script>scripts\scrFireworkStep.gml</script>
     </scripts>
     <scripts name="Boss">
       <script>scripts\scr_boss_step.gml</script>
@@ -355,6 +368,7 @@
       <object>objects\objOverwatch</object>
       <object>objects\objDeathFade</object>
       <object>objects\objGOBackground</object>
+      <object>objects\objVictory</object>
     </objects>
     <objects name="Overworld">
       <object>objects\objOverworldController</object>
@@ -392,6 +406,7 @@
         <object>objects\objSelBackButton</object>
         <object>objects\objFadeMask</object>
       </objects>
+      <object>objects\objFirework</object>
     </objects>
     <objects name="Other">
       <object>objects\obj_overlord</object>

@@ -16,6 +16,58 @@ draw_healthbar  (view_xview[0]+10, view_yview[0]+10, view_xview[0]+3.5*obj_playe
 //draw_healthbar  (view_xview[0]+10, view_yview[0]+50, view_xview[0]+3.5*obj_player.MaxMP, view_yview[0]+y+80, obj_player.MP/obj_player.MaxMP*100, c_white, c_red, c_blue, 0, true, true);
 draw_healthbar  (view_xview[0]+10, view_yview[0]+50, view_xview[0]+350, view_yview[0] + 60, (objOverwatch.currentExp/objOverwatch.i)* 100, c_dkgray, c_green, c_green, 0, true, true);
 
+if (global.priElem = 1)
+{
+    draw_sprite(sprFireHUD, 0, view_xview[0]+120, view_yview[0]+90);
+}
+else if (global.priElem = 2)
+{
+    draw_sprite(sprWaterHUD, 0, view_xview[0]+120, view_yview[0]+90);
+}
+else if (global.priElem = 3)
+{
+    draw_sprite(sprEarthHUD, 0, view_xview[0]+120, view_yview[0]+90);
+}
+else if (global.priElem = 4)
+{
+    draw_sprite(sprAirHUD, 0, view_xview[0]+120, view_yview[0]+90);
+}
+
+if (global.secElem = 1)
+{
+    draw_sprite(sprFireHUD, 0, view_xview[0]+160, view_yview[0]+90);
+}
+else if (global.secElem = 2)
+{
+    draw_sprite(sprWaterHUD, 0, view_xview[0]+160, view_yview[0]+90);
+}
+else if (global.secElem = 3)
+{
+    draw_sprite(sprEarthHUD, 0, view_xview[0]+160, view_yview[0]+90);
+}
+else if (global.secElem = 4)
+{
+    draw_sprite(sprAirHUD, 0, view_xview[0]+160, view_yview[0]+90);
+}
+
+draw_circle_colour(view_xview[0] + 970, view_yview[0] + 45, 26, c_lime, c_orange, false);
+if (obj_player.curElem = 1)
+{
+    draw_sprite(sprFireHUD, 0, view_xview[0]+970, view_yview[0]+45);
+}
+else if (obj_player.curElem = 2)
+{
+    draw_sprite(sprWaterHUD, 0, view_xview[0]+970, view_yview[0]+45);
+}
+else if (obj_player.curElem = 3)
+{
+    draw_sprite(sprEarthHUD, 0, view_xview[0]+970, view_yview[0]+45);
+}
+else if (obj_player.curElem = 4)
+{
+    draw_sprite(sprAirHUD, 0, view_xview[0]+970, view_yview[0]+45);
+}
+
 draw_healthbar  (view_xview[0]+1000, view_yview[0]+10, view_xview[0] + 1010, view_yview[0] + 100, (obj_player.bossSpawnReady/objOverworldController.levelReq) * 100, c_dkgray, c_yellow, c_red, 3, true, true);
 
 if (global.DebugMode)

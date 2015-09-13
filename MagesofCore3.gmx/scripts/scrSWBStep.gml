@@ -15,8 +15,10 @@ if (position_meeting(mouse_x, mouse_y, objSecWaterButton))
     else if (buttonActive = true)
     {
         sprite_index = sprSWBSelected;
+        timer = 0;
     }
     else
     {
         sprite_index = sprSecWaterButton;
+        timer = 0;
     }

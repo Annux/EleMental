@@ -28,7 +28,7 @@ else
 //------------------------------------ MOVEMENT ------------------------------------//
 
 // Moving by following waypoints set by the mouse //
-if(moveClick)&&(deathAnim = 0)
+if(moveClick)&&(deathAnim = 0)&&(LevelComplete = false)
 {
     if(instance_exists(obj_target))
         {instance_deactivate_object(obj_target)}
@@ -51,7 +51,7 @@ if (spellSwitch)
 
 
 if(DebugToggle && !global.DebugMode)
-{    curElem = secElem
+{
     global.DebugMode = true
     normlimboElem = curElem;
     normcurElem = heldElem;
@@ -63,9 +63,9 @@ if(DebugToggle && !global.DebugMode)
     normDEF = DEF
     normINT = INT
     normRES = RES
-}else if(secSpell && curElem = 2)
+}
 else if(DebugToggle && global.DebugMode)
-{    curElem = priElem
+{
     global.DebugMode = false
     curElem = normlimboElem
     heldElem = normcurElem

@@ -10,9 +10,10 @@ maxSpeed = 5 + (SPD*.15)
 reducedSpeed = maxSpeed*.333
 accel = .5+((SPD-10)*.05)
 ////////
-if(LevelComplete)
+if(LevelComplete) && (vicSpawned < 8)
 {
-    // animation!?
+    instance_create(view_xview[0]+view_wview[0]/2, view_yview+view_hview[0]/2, objVictory);
+    vicSpawned += 1;
 }
 
 

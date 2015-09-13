@@ -1,0 +1,1 @@
+color = random(3);

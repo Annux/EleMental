@@ -83,3 +83,6 @@ priElem = global.priElem;
 
 //this is how the boss spawner knows when to spawn the boss//
 bossSpawnReady = 0;
+
+//this stops the level complete notification from spawning using player step//
+vicSpawned = 0;
