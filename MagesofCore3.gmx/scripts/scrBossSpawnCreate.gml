@@ -1,1 +1,1 @@
-bossSpawned = false;
+global.bossSpawned = false;

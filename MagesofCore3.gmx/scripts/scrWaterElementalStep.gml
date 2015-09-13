@@ -3,6 +3,7 @@ if (HP <= 0)
     obj_player.bossSpawnReady += 1;
     objOverwatch.expGained += enemyXp;
     instance_destroy();
+    global.enemyCounter += 1
 }
 else if (blownBack = true)
 {
