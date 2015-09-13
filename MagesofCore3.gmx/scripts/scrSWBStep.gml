@@ -1,5 +1,6 @@
 if (position_meeting(mouse_x, mouse_y, objSecWaterButton))
     {
+        timer += 1/5;
         sprite_index = sprSWBSelected;
         if (mouse_check_button_pressed(mb_left))
         {

@@ -1,5 +1,6 @@
 if (position_meeting(mouse_x, mouse_y, objPriFireButton))
     {
+        timer += 1/5;
         sprite_index = sprPFBSelected;
         if (mouse_check_button_pressed(mb_left))
         {
@@ -14,8 +15,10 @@ if (position_meeting(mouse_x, mouse_y, objPriFireButton))
     else if (buttonActive = true)
     {
         sprite_index = sprPFBSelected;
+        timer = 0;
     }
     else
     {
         sprite_index = sprPriFireButton;
+        timer = 0;
     }

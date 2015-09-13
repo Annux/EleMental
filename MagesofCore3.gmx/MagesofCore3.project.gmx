@@ -108,6 +108,10 @@
         <sprite>sprites\sprSelStartHilite</sprite>
         <sprite>sprites\sprSelBackButton</sprite>
         <sprite>sprites\sprSelBackHilite</sprite>
+        <sprite>sprites\sprFireText</sprite>
+        <sprite>sprites\sprWaterText</sprite>
+        <sprite>sprites\sprEarthText</sprite>
+        <sprite>sprites\sprAirText</sprite>
       </sprites>
     </sprites>
     <sprites name="Boss">
@@ -237,6 +241,7 @@
         <script>scripts\scrFadeCreate.gml</script>
         <script>scripts\scrFadeStep.gml</script>
       </scripts>
+      <script>scripts\scrReqManagementStep.gml</script>
     </scripts>
     <scripts name="Overlord">
       <script>scripts\debug_draw.gml</script>
@@ -260,6 +265,7 @@
         <script>scripts\scrSelMoveButtonCreate.gml</script>
         <script>scripts\scrSelStartButtonStep.gml</script>
         <script>scripts\scrSelBackButtonStep.gml</script>
+        <script>scripts\scrSelButtonCreate.gml</script>
         <scripts name="Primary">
           <script>scripts\scrPFBStep.gml</script>
           <script>scripts\scrPWBStep.gml</script>
@@ -274,6 +280,10 @@
         </scripts>
         <script>scripts\scrFadeMaskCreate.gml</script>
         <script>scripts\scrFadeMaskStep.gml</script>
+        <script>scripts\scrFireTextDraw.gml</script>
+        <script>scripts\scrWaterTextDraw.gml</script>
+        <script>scripts\scrEarthTextDraw.gml</script>
+        <script>scripts\scrAirTextDraw.gml</script>
       </scripts>
     </scripts>
     <scripts name="Boss">

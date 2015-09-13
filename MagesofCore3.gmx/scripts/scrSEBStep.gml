@@ -1,5 +1,6 @@
 if (position_meeting(mouse_x, mouse_y, objSecEarthButton))
     {
+        timer += 1/5;
         sprite_index = sprSEBSelected;
         if (mouse_check_button_pressed(mb_left))
         {
@@ -14,8 +15,10 @@ if (position_meeting(mouse_x, mouse_y, objSecEarthButton))
     else if (buttonActive = true)
     {
         sprite_index = sprSEBSelected;
+        timer = 0;
     }
     else
     {
         sprite_index = sprSecEarthButton;
+        timer = 0;
     }

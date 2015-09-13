@@ -1,5 +1,6 @@
 if (position_meeting(mouse_x, mouse_y, objSecAirButton))
     {
+        timer += 1/5;
         sprite_index = sprSABSelected;
         if (mouse_check_button_pressed(mb_left))
         {
@@ -14,8 +15,10 @@ if (position_meeting(mouse_x, mouse_y, objSecAirButton))
     else if (buttonActive = true)
     {
         sprite_index = sprSABSelected;
+        timer = 0;
     }
     else
     {
         sprite_index = sprSecAirButton;
+        timer = 0;
     }

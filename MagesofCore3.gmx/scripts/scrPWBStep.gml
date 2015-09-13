@@ -1,5 +1,6 @@
 if (position_meeting(mouse_x, mouse_y, objPriWaterButton))
     {
+        timer += 1/5;
         sprite_index = sprPWBSelected;
         if (mouse_check_button_pressed(mb_left))
         {
@@ -14,8 +15,10 @@ if (position_meeting(mouse_x, mouse_y, objPriWaterButton))
     else if (buttonActive = true)
     {
         sprite_index = sprPWBSelected;
+        timer = 0;
     }
     else
     {
         sprite_index = sprPriWaterButton;
+        timer = 0;
     }
