@@ -1,7 +1,7 @@
 global.hpCur        = 0
 global.enemySpawner = 0
 hpMax    = 10
-enemyMax = 20
+enemyMax = 10
 
 hpTimer  = room_speed * 1.5
 eneTimer = room_speed * 3

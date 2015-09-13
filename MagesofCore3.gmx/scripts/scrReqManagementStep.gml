@@ -1,4 +1,4 @@
 if (room = Level1)
 {
-    levelReq = 30;
+    levelReq = 15;
 }

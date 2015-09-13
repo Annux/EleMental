@@ -40,7 +40,7 @@ spellType = true // type of spell to cast (true or 1 = primary, false or 0 = sec
 
 shot = false
 ballCount = 0
-maxballCount = 5
+maxballCount = 8
 aBallCount = 0
 maxaBallCount = 40
 

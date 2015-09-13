@@ -9,7 +9,7 @@ if(shotBut)
     {shot = true}
 
 ///// Effect /////
-dmgBase = .5
+dmgBase = 1
 effectType = 1 // Burn Effect?
 effectChance = .1 // likeliness of causing burn
 
