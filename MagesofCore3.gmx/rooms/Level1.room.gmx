@@ -51,26 +51,8 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_player" x="480" y="672" name="inst_1108C0E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="2144" y="480" name="inst_B7FCC615" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="128" y="544" name="inst_912593AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="2432" y="832" name="inst_016B69DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="192" y="160" name="inst_27585AF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="1664" y="1216" name="inst_2D0EC259" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objFireElemental" x="224" y="1440" name="inst_B30D1B81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWaterElemental" x="2400" y="1472" name="inst_6C2F6110" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objEarthElemental" x="1248" y="96" name="inst_4D36347C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="1216" y="896" name="inst_1108C0E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_overlord" x="0" y="0" name="inst_68DBCCA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="1664" y="1536" name="inst_1EDF06B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="2304" y="1216" name="inst_F5945CD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="704" y="1536" name="inst_BE834E5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="416" y="1088" name="inst_DF35894B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="1376" y="384" name="inst_E9D25E9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="1088" y="1248" name="inst_55FD77C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="704" y="384" name="inst_E46BCE4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="1920" y="928" name="inst_FCFAD5FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="1280" y="896" name="inst_0100F772" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="2176" y="128" name="inst_3EB750F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shore" x="0" y="1760" name="inst_7672AFD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shore" x="512" y="1760" name="inst_1625CDA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shore" x="1024" y="1760" name="inst_5E0D2B58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -128,107 +110,36 @@
     <instance objName="obj_ocean" x="2304" y="1792" name="inst_6081D29C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ocean" x="2432" y="1792" name="inst_2202ACC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOceanSpawner" x="32" y="1728" name="inst_B40BF060" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="64" y="1728" name="inst_53E0B3E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="96" y="1728" name="inst_26DD94BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="192" y="1728" name="inst_B597ECB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="224" y="1728" name="inst_BC9C02A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOceanSpawner" x="256" y="1728" name="inst_BBD00527" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="288" y="1728" name="inst_D9899578" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="320" y="1728" name="inst_14260374" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="352" y="1728" name="inst_249E8B6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="384" y="1728" name="inst_79AFA2BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="416" y="1728" name="inst_A06C884E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOceanSpawner" x="448" y="1728" name="inst_AB46322F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="544" y="1728" name="inst_04ADF027" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="576" y="1728" name="inst_F0AA6468" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="608" y="1728" name="inst_B935C1B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOceanSpawner" x="640" y="1728" name="inst_C20B9A7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="672" y="1728" name="inst_9A2060B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="704" y="1728" name="inst_4BD93F61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="736" y="1728" name="inst_035BC93D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="768" y="1728" name="inst_3E1D897E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="800" y="1728" name="inst_F8ABD22E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOceanSpawner" x="832" y="1728" name="inst_3928E56B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="928" y="1728" name="inst_65A21516" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="960" y="1728" name="inst_FFD5EFE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="992" y="1728" name="inst_DADFC640" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOceanSpawner" x="1024" y="1728" name="inst_F4C8C1E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1056" y="1728" name="inst_5C13BA8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1088" y="1728" name="inst_CDF289E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1120" y="1728" name="inst_087CFBBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1152" y="1728" name="inst_8F85A79B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1184" y="1728" name="inst_9644D780" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOceanSpawner" x="1216" y="1728" name="inst_B049BF4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1248" y="1728" name="inst_1931D03C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1280" y="1728" name="inst_CA6D2F78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1312" y="1728" name="inst_00EA9940" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1344" y="1728" name="inst_00A9C02D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1376" y="1728" name="inst_B677CE35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOceanSpawner" x="1408" y="1728" name="inst_38E3DBFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1440" y="1728" name="inst_1472F69F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1472" y="1728" name="inst_552F7FD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1504" y="1728" name="inst_E211C46A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1536" y="1728" name="inst_FB034B20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1568" y="1728" name="inst_D2E7800D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOceanSpawner" x="1600" y="1728" name="inst_85672F61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1632" y="1728" name="inst_6C8BD88B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1664" y="1728" name="inst_57B5EFB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1696" y="1728" name="inst_D6659FC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1728" y="1728" name="inst_9F75B695" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1760" y="1728" name="inst_27073C8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOceanSpawner" x="1792" y="1728" name="inst_A9EDBCE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1824" y="1728" name="inst_8BF75846" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1856" y="1728" name="inst_C86B80F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1888" y="1728" name="inst_F4C8699B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1920" y="1728" name="inst_ADD790CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="1952" y="1728" name="inst_63A064D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOceanSpawner" x="1984" y="1728" name="inst_482FB11C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2016" y="1728" name="inst_B30F5566" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2048" y="1728" name="inst_6841843D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2080" y="1728" name="inst_3A2341D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2112" y="1728" name="inst_CA854648" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2144" y="1728" name="inst_80CCB222" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2176" y="1728" name="inst_993AA5DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOceanSpawner" x="2208" y="1728" name="inst_C176D505" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2240" y="1728" name="inst_64C7901E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2272" y="1728" name="inst_0B625FDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2304" y="1728" name="inst_AC2097B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2336" y="1728" name="inst_69576B37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2368" y="1728" name="inst_42144C3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2400" y="1728" name="inst_AAC5E1EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOceanSpawner" x="2432" y="1728" name="inst_7E937080" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2464" y="1728" name="inst_DD7E0E73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2496" y="1728" name="inst_A3F66EC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOceanSpawner" x="2528" y="1728" name="inst_D0D6FC1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLandSpawner" x="0" y="1536" name="inst_522EC66D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="0" y="1408" name="inst_07FCA8E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="0" y="1280" name="inst_DF467434" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="0" y="1024" name="inst_809DFFF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="0" y="864" name="inst_A1CD0C04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLandSpawner" x="0" y="1312" name="inst_DF467434" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLandSpawner" x="0" y="992" name="inst_A1CD0C04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLandSpawner" x="0" y="672" name="inst_46D7D96D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="0" y="64" name="inst_A4C22DA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLandSpawner" x="0" y="352" name="inst_D64155E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="0" y="512" name="inst_DEF0A0DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLandSpawner" x="192" y="0" name="inst_6FB9F830" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="416" y="0" name="inst_C586F636" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="608" y="0" name="inst_6168A603" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLandSpawner" x="480" y="0" name="inst_C586F636" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLandSpawner" x="864" y="0" name="inst_2203009C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="1120" y="0" name="inst_AE3F5D2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="1344" y="0" name="inst_791EDBBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="1536" y="0" name="inst_F5C6B0FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="1824" y="0" name="inst_99A9EBCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="2016" y="0" name="inst_C2C4BF87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="2176" y="0" name="inst_C552D029" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="2368" y="0" name="inst_F040CC78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="2528" y="64" name="inst_C4A143B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="2528" y="256" name="inst_D4A64920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="2528" y="416" name="inst_E053BBFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="2528" y="576" name="inst_D3F04412" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLandSpawner" x="1152" y="0" name="inst_AE3F5D2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLandSpawner" x="1440" y="0" name="inst_791EDBBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLandSpawner" x="1888" y="0" name="inst_99A9EBCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLandSpawner" x="2240" y="0" name="inst_C552D029" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLandSpawner" x="2528" y="160" name="inst_D4A64920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLandSpawner" x="2528" y="480" name="inst_D3F04412" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLandSpawner" x="2528" y="736" name="inst_72807ABB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="2528" y="1024" name="inst_A36905E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="2528" y="1216" name="inst_0F3F9F27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLandSpawner" x="2528" y="1376" name="inst_A97701F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLandSpawner" x="2528" y="1120" name="inst_0F3F9F27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBossSpawner" x="1280" y="864" name="inst_047677CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLandSpawner" x="2528" y="1312" name="inst_17CA55EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background1" x="0" y="0" w="96" h="32" xo="96" yo="256" id="10003195" name="inst_A54CFB1C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -2,8 +2,8 @@ if (HP <= 0)
 {
     obj_player.bossSpawnReady += 1;
     objOverwatch.expGained += enemyXp;
+    global.enemyCounter -= 1
     instance_destroy();
-    global.enemyCounter += 1
 }
 else if (blownBack = true)
 {
@@ -12,13 +12,11 @@ else if (blownBack = true)
         {path_delete(movePath)}
     move_towards_point(obj_player.x, obj_player.y, -4);
     if (!instance_exists(blowBackCaster))
-    {
-        blownBack = false;
-    }
+        {blownBack = false;}
 }
 else
 {
-image_angle = direction;
+    image_angle = direction;
     if (isAttacking = true)
     {
         fireball = instance_create(x, y, obj_enemy_fire);

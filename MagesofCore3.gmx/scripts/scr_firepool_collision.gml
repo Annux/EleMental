@@ -10,7 +10,7 @@ if(canHit) && ((caster = obj_player.id && other.id != obj_player.id) || (caster 
 
 if(caster = obj_player.id && other.id = obj_player.id) && (canHit)
 {
-    other.HP -= Damage/4
+    other.HP -= Damage/2
     if(!collision)
         {dmgCompound *= damageMultiplyRate}
     collision = true

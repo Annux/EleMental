@@ -2,4 +2,4 @@ if (distance_to_object(obj_player)<500)
         {
             isAttacking = true;
         }
-        alarm[0] = room_speed * 3;
+alarm[0] = room_speed * 3 + random_range(1, 10);

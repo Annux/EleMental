@@ -145,8 +145,8 @@
       <script>scripts\path_to_point.gml</script>
     </scripts>
     <scripts name="Enemy">
-      <script>scripts\scr_enemy.gml</script>
-      <script>scripts\scr_enemy_step.gml</script>
+      <script>scripts\scr_hpDrop_create.gml</script>
+      <script>scripts\scr_hpDrop_collision.gml</script>
       <script>scripts\scrAirEnemyDraw.gml</script>
       <scripts name="FireElemental">
         <script>scripts\scrFireElementalCreate.gml</script>
@@ -245,6 +245,8 @@
     </scripts>
     <scripts name="Overlord">
       <script>scripts\debug_draw.gml</script>
+      <script>scripts\scr_overlord_step.gml</script>
+      <script>scripts\scr_overlord_create.gml</script>
     </scripts>
     <scripts name="LevelUpCode">
       <script>scripts\scrOverwatchCreate.gml</script>
@@ -297,8 +299,8 @@
     </scripts>
     <scripts name="SpawnTriggers">
       <script>scripts\scrSpawnTriggerCreate.gml</script>
-      <script>scripts\scrLandSpawnAlarm0.gml</script>
-      <script>scripts\scrWaterSpawnAlarm0.gml</script>
+      <script>scripts\scr_LandSpawn_Step.gml</script>
+      <script>scripts\scr_WaterSpawn_Step.gml</script>
       <script>scripts\scrBossSpawnCreate.gml</script>
       <script>scripts\scrBossSpawnStep.gml</script>
     </scripts>
@@ -309,7 +311,6 @@
   <objects name="objects">
     <objects name="enemies">
       <object>objects\objElementalParent</object>
-      <object>objects\obj_enemy</object>
       <object>objects\objFireElemental</object>
       <object>objects\objWaterElemental</object>
       <object>objects\objEarthElemental</object>
@@ -387,6 +388,7 @@
     <objects name="Other">
       <object>objects\obj_overlord</object>
       <object>objects\obj_shore</object>
+      <object>objects\obj_hpDrop</object>
     </objects>
     <objects name="Boss">
       <object>objects\crabboss</object>
@@ -397,6 +399,7 @@
       <object>objects\objOceanSpawner</object>
       <object>objects\objLandSpawner</object>
       <object>objects\objBossSpawner</object>
+      <object>objects\obj_spawner_parent</object>
     </objects>
   </objects>
   <rooms name="rooms">
