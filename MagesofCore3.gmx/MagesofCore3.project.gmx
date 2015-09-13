@@ -118,6 +118,11 @@
       <sprite>sprites\spr_claw_close</sprite>
       <sprite>sprites\spr_clawtarget</sprite>
     </sprites>
+    <sprites name="Spawners">
+      <sprite>sprites\sprOceanSpawnTrigger</sprite>
+      <sprite>sprites\sprLandSpawnTrigger</sprite>
+      <sprite>sprites\sprBossSpawnTrigger</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bckOverworldMap</background>
@@ -280,6 +285,13 @@
       <script>scripts\scr_claw_step.gml</script>
       <script>scripts\scr_claw_collision.gml</script>
     </scripts>
+    <scripts name="SpawnTriggers">
+      <script>scripts\scrSpawnTriggerCreate.gml</script>
+      <script>scripts\scrLandSpawnAlarm0.gml</script>
+      <script>scripts\scrWaterSpawnAlarm0.gml</script>
+      <script>scripts\scrBossSpawnCreate.gml</script>
+      <script>scripts\scrBossSpawnStep.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\mainFont</font>
@@ -370,6 +382,11 @@
       <object>objects\crabboss</object>
       <object>objects\obj_claw</object>
       <object>objects\obj_clawtarget</object>
+    </objects>
+    <objects name="SpawnTriggers">
+      <object>objects\objOceanSpawner</object>
+      <object>objects\objLandSpawner</object>
+      <object>objects\objBossSpawner</object>
     </objects>
   </objects>
   <rooms name="rooms">

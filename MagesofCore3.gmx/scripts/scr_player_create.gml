@@ -75,3 +75,9 @@ movePath = path_add();
 curElem = global.priElem;
 heldElem = global.secElem;
 limboElem = 0;
+
+//this is so Levelup Overwatch can check the player's individual primary element//
+priElem = global.priElem;
+
+//this is how the boss spawner knows when to spawn the boss//
+bossSpawnReady = 0;
