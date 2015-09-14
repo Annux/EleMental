@@ -11,8 +11,9 @@ if (levelUp = true)
     currentExp = 0 + remainingExp;
     remainingExp = 0;
     playerHealth += 50;
-    totalExp = currentExp;
+    //totalExp = currentExp;
     i = 100 * playerLevel;
+    currentExp = 0;
     if (obj_player.priElem = 1)
     {
         obj_player.POW += 2;
@@ -54,3 +55,13 @@ if (expGainReset = true)
     totalExp = currentExp;
     expGainReset = false;
 }
+
+/*if (remainingExp > 0)
+{
+    expGained += 1;
+    remainingExp -= 1;
+}
+//if (remainingExp > 0) && (levelUp = false)
+//{
+    //expGained = expGained + remainingExp;
+//}

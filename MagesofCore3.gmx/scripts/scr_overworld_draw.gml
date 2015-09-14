@@ -8,7 +8,7 @@ if(instance_exists(obj_player))
     RES = obj_player.RES
     Level = objOverwatch.playerLevel
 }
-else
+else if (playerActive = false)
 {
     POW = 10
     END = 10
@@ -18,8 +18,18 @@ else
     RES = 10
     Level = 1
 }
+else
+{
+    POW = POW
+    END = END
+    DEF = DEF
+    SPD = SPD
+    INT = INT
+    RES = RES
+    Level = Level
+}
 
-if(room = OverworldMap)
+if(room = OverworldMap) && (statsActive = 1)
 {
     draw_set_color(c_white)
     draw_rectangle(room_width*7/10, room_height*7/10, room_width-5, room_height-5, false);

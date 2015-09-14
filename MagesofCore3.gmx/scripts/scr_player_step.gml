@@ -10,7 +10,7 @@ maxSpeed = 5 + (SPD*.15)
 reducedSpeed = maxSpeed*.333
 accel = .5+((SPD-10)*.05)
 ////////
-if(LevelComplete) && (vicSpawned < 8)
+if(LevelComplete) && (vicSpawned < 8) && (objOverwatch.expGained = 0)
 {
     instance_create(view_xview[0]+view_wview[0]/2, view_yview+view_hview[0]/2, objVictory);
     vicSpawned += 1;

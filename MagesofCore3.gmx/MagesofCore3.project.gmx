@@ -258,6 +258,7 @@
         <script>scripts\scrFadeCreate.gml</script>
         <script>scripts\scrFadeStep.gml</script>
       </scripts>
+      <script>scripts\scrOverworldStep.gml</script>
       <script>scripts\scrReqManagementStep.gml</script>
       <script>scripts\scr_overworld_draw.gml</script>
     </scripts>

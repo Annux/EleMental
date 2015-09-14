@@ -2,7 +2,7 @@ instance_deactivate_object(objElementalParent)
 
 MaxHP = 100;
 HP = MaxHP;
-enemyXp = 1000;
+enemyXp = 100;
 bSpeed = 0;
 
 movePath = path_add();
