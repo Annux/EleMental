@@ -163,6 +163,7 @@
         <script>scripts\scrVictoryCreate.gml</script>
         <script>scripts\scrVictoryStep.gml</script>
       </scripts>
+      <script>scripts\scr_player_earthquake_collision.gml</script>
     </scripts>
     <scripts name="Enemy">
       <script>scripts\scr_hpDrop_create.gml</script>

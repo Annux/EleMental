@@ -61,7 +61,7 @@ else if(!canMove) && (Stunned)
 {
     alarm[9] = StunCD
     Stunned = false
-        if(path_exists(movePath))
+    if(path_exists(movePath))
         {path_delete(movePath)}
 }
 
