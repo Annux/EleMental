@@ -181,10 +181,14 @@ else if (global.priElem = Earth)
         /// Earth thingy ///
         else if(curElem = 3)
         {
-            if (spell_start)
+            if (spell_start)  && (canShoot[Earth, 0])
             {
                 sprite_index = sprEarthAttack;
                 earthQuake = true;
+                old_xview = view_xview[0]
+                old_yview = view_yview[0]
+                alarm[6] = earthquakeCD
+                canShoot[Earth,0] = false
             }
         }
          

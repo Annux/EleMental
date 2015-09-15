@@ -1,11 +1,14 @@
 MaxHP = 10;
 HP = MaxHP;
 enemyXp = 15;
-wSpeed = 0;
+eSpeed = 0;
 
+canMove = true
 isAttacking = false;
 blownBack = false;
 blowBackCaster = 0;
+StunCD = 0
+Stunned = false
 
 targetX = random(room_width);
 targetY = random(room_height);

@@ -1,5 +1,6 @@
 player_x = obj_player.x;
 player_y = obj_player.y;
+blownBack = false
 
 if (HP <= 0)
 {
@@ -11,7 +12,7 @@ if (HP <= 0)
 }
 
 //////////////// CHASE CODE ///////////////////////
-else if (!collision_circle(x, y, 250, obj_player, false, false)) && (!Fightmode) && (!Attacking)
+else if (!collision_circle(x, y, 250, obj_player, false, false)) && (!Fightmode) && (!Attacking) && (canMove)
 {
     if(direction > point_direction(x,y,player_x,player_y)+10 || direction < point_direction(x,y,player_x,player_y)-10)
     {
@@ -27,7 +28,7 @@ else if (!collision_circle(x, y, 250, obj_player, false, false)) && (!Fightmode)
     image_speed = .75
 }
 //////////////// MELEE DISTANCE CODE ///////////////////////
-else if(!Attacking)
+else if(!Attacking) && (canMove)
 {
     Fightmode = true
     if(path_exists(movePath))
@@ -55,6 +56,13 @@ else if(!Attacking)
         Facing = false
         Fightmode = false
     }
+}
+else if(!canMove) && (Stunned)
+{
+    alarm[9] = StunCD
+    Stunned = false
+        if(path_exists(movePath))
+        {path_delete(movePath)}
 }
 
 //Damage Scripts

@@ -7,7 +7,7 @@ if (HP <= 0)
 }
 else if (blownBack = true)
 {
-    rSpeed = 0;
+    eSpeed = 0;
     if(path_exists(movePath))
         {path_delete(movePath)}
     move_towards_point(obj_player.x, obj_player.y, -4);
@@ -16,7 +16,7 @@ else if (blownBack = true)
         blownBack = false;
     }
 }
-else
+else if(canMove)
 {
 image_angle = direction;
     if (isAttacking = true)
@@ -28,7 +28,7 @@ image_angle = direction;
     {
         if (position_empty(targetX, targetY))
         {
-            path_to_point(self.id, targetX, targetY, rSpeed)
+            path_to_point(self.id, targetX, targetY, eSpeed)
         }
         else
         {
@@ -38,16 +38,23 @@ image_angle = direction;
     }
     if (image_index = 1) || (image_index = 4)
     {
-        rSpeed = 4;
+        eSpeed = 4;
     }
     if (image_index = 2) || (image_index = 5)
     {
-        rSpeed = 2;
+        eSpeed = 2;
     }
     else
     {
-        rSpeed = 1;
+        eSpeed = 1;
     }
+}
+else if(!canMove) && (Stunned)
+{
+    alarm[9] = StunCD
+    Stunned = false
+        if(path_exists(movePath))
+        {path_delete(movePath)}
 }
 
 //Damage Scripts

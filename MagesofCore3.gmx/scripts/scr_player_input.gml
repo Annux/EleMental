@@ -16,8 +16,15 @@ spellSwitch = keyboard_check_pressed(vk_space);
 //keep the player from moving when running the earth attack
 if (sprite_index = sprEarthAttack)
 {
+    Damage = .25 + POW*.025
+    enemyStunCD = INT*.1
+    view_xview[0] += random_range(-5,5)
+    view_yview[0] += random_range(-5,5)
+    
     if (image_index = 11)
     {
+        view_xview[0] =  old_xview
+        view_yview[0] =     old_yview
         instance_create(x, y, objAftershock);
         sprite_index =  sprPlayerIdle;
         earthQuake = false;

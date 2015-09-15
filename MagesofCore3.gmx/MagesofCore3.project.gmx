@@ -240,6 +240,7 @@
       <scripts name="EarthMainSpells">
         <scripts name="Earthquake">
           <script>scripts\scrEarthquakeCreate.gml</script>
+          <script>scripts\scrEarthquakeStep.gml</script>
         </scripts>
         <scripts name="ForcePush">
           <script>scripts\scrForcePushCreate.gml</script>

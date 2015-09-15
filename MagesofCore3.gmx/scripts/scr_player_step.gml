@@ -40,7 +40,6 @@ else if HP <= 0
     {
         image_alpha = 0;
     }
-    // INSERT GAME. OVER. CODE
 }
 
 if MP > MaxMP
@@ -71,7 +70,7 @@ if(instance_exists(objWaterBall))
 }
 
 
-if(instance_exists(obj_target))
+if(instance_exists(obj_target)) && (canMove)
 {
     // Pathing code. Dont touch this either or we are all doomed//
     if((obj_target.x - x > 10 || obj_target.x - x < -10 || obj_target.y - y > 10 || obj_target.y - y < -10)) // if not at target, set speed
@@ -90,15 +89,24 @@ if(instance_exists(obj_target))
         pSpeed = 0
     }
     //walk on path
+    if(earthQuake)
+        {pSpeed *= 1/3}
     path_to_point(self.id, obj_target.x, obj_target.y, pSpeed)
     if(pSpeed = 0)
         {instance_deactivate_object(obj_target)}
     image_angle = direction
 }
-else if(pSpeed = 0)
+else if(pSpeed = 0) && (canMove)
 {
      // aim where the mouse is pointing if not moving //
     image_angle = point_direction(x,y, mouse_x, mouse_y)
+}
+else if(!canMove) && (Stunned)
+{
+    alarm[9] = StunCD
+    Stunned = false
+    if(path_exists(movePath))
+        {path_delete(movePath)}
 }
 
 // Dont allow the player to move past the screen edge //

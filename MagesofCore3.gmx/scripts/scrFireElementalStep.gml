@@ -7,14 +7,14 @@ if (HP <= 0) && (obj_player.image_alpha > 0)
 }
 else if (blownBack = true)
 {
-    moveSpeed = 0;
+    eSpeed = 0;
     if(path_exists(movePath))
         {path_delete(movePath)}
     move_towards_point(obj_player.x, obj_player.y, -4);
     if (!instance_exists(blowBackCaster))
         {blownBack = false;}
 }
-else
+else if(canMove)
 {
     image_angle = direction;
     if (isAttacking = true)
@@ -35,6 +35,13 @@ else
             targetY = random(room_height); 
         }
     }
+}
+else if(!canMove) && (Stunned)
+{
+    alarm[9] = StunCD
+    Stunned = false
+        if(path_exists(movePath))
+        {path_delete(movePath)}
 }
 
 //Damage Scripts

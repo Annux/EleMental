@@ -10,7 +10,7 @@ movePath = path_add();
 Attacking = false;
 Fightmode = false
 Facing = false
-
+canMove = true
 
 Lclaw_x = x + lengthdir_x(30, image_angle + 10)
 Lclaw_y = y + lengthdir_y(30, direction + 10)
@@ -33,3 +33,8 @@ fireRatio  = 1
 earthRatio = 1.2
 waterRatio = .8
 airRatio   = 1
+
+blownBack = false
+blowBackCaster = 0;
+Stunned = false
+StunCD = 0

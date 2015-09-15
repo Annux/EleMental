@@ -26,6 +26,7 @@ effRes    = 100/(100+(RES/2))   // % chance of ignoring successful effect
 
 Status    = 0 // State. We'll have to decide what numbers mean what (1 = Slowed, 2 = Stunned, etc)
 LevelComplete = false
+canMove = true
 
 ////////////// -MOVEMENT STATS- //////////////
 pSpeed = 0
@@ -52,12 +53,19 @@ airballCD = room_speed*1.5
 firepoolCD = room_speed*.8
 waterpoolCD  = room_speed*2
 
+earthquakeCD = room_speed*2
+enemyStunCD = INT*.1
+StunCD = 0
+Stunned = false
+
 canShoot[Fire,0]     = true
 canShoot[Fire,Air]   = true
 canShoot[Fire,Earth] = true
 
 canShoot[Water,0]    = true
 canShoot[Water,Fire] = true
+
+canShoot[Earth,0] = true
 
 setTimer = true
 
@@ -77,6 +85,7 @@ movePath = path_add();
 curElem = global.priElem;
 heldElem = global.secElem;
 limboElem = 0;
+Damage = 0
 
 //this is so Levelup Overwatch can check the player's individual primary element//
 priElem = global.priElem;

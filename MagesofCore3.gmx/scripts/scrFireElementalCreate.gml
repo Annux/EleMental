@@ -5,11 +5,14 @@ SPD = 30
 MaxHP = 7;
 HP = MaxHP;
 enemyXp = 15;
-moveSpeed = 5 + (SPD*.15)
+eSpeed = 5 + (SPD*.15)
 
+canMove = true
 isAttacking = false;
 blownBack = false;
 blowBackCaster = 0;
+StunCD = 0
+Stunned = false
 
 targetX = random(room_width);
 targetY = random(room_height);
