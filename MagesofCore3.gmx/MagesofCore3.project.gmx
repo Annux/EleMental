@@ -6,7 +6,7 @@
   <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sound0</sound>
+    <sound>sound\Loop_01</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
@@ -67,6 +67,7 @@
       </sprites>
       <sprites name="EarthMainSpells">
         <sprite>sprites\sprEarthAttack</sprite>
+        <sprite>sprites\sprEarthquake</sprite>
         <sprite>sprites\sprAftershock</sprite>
         <sprite>sprites\sprForcePush</sprite>
       </sprites>
@@ -420,6 +421,7 @@
       <object>objects\obj_overlord</object>
       <object>objects\obj_shore</object>
       <object>objects\obj_hpDrop</object>
+      <object>objects\object65</object>
     </objects>
     <objects name="Boss">
       <object>objects\crabboss</object>
