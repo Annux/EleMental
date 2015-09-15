@@ -6,6 +6,7 @@ if (HP <= 0)
     objOverwatch.expGained += enemyXp;
     instance_deactivate_object(obj_claw)
     obj_player.LevelComplete = true
+    objOverworldController.Level1Cleared = true;
     instance_destroy();
 }
 

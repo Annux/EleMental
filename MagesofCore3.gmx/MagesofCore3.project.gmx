@@ -5,7 +5,9 @@
   </Configs>
   <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\spr_char</sprite>
@@ -218,6 +220,7 @@
         </scripts>
         <scripts name="BubbleMine">
           <script>scripts\scrBubbleMineCreate.gml</script>
+          <script>scripts\scrEnemyMineCreate.gml</script>
           <script>scripts\scrBubbleMineStep.gml</script>
           <script>scripts\scrBubbleMineCollision.gml</script>
         </scripts>
@@ -338,6 +341,7 @@
       <object>objects\objEarthElemental</object>
       <objects name="enemy spells">
         <object>objects\obj_enemy_fire</object>
+        <object>objects\objEnemyMine</object>
       </objects>
     </objects>
     <objects name="player">

@@ -15,7 +15,10 @@ else if (blownBack = true)
         {path_delete(movePath)}
     move_towards_point(obj_player.x, obj_player.y, -4);
     if (!instance_exists(blowBackCaster))
-        {blownBack = false;}
+        {
+        image_speed = 1;
+        blownBack = false;
+        }
 }
 else
 {
@@ -37,6 +40,10 @@ else
             targetX = random(room_width);
             targetY = random(room_height);
         }
+        if (image_index = 0)
+        {
+            instance_create(x, y, objEnemyMine);
+        }
         if (image_index = 1)
         {
             wSpeed = 8;
@@ -45,11 +52,14 @@ else
         }
         if (image_index = 2)
         {
+            if (wSpeed > 0)
+            {
             wSpeed -= 0.25;
             if (wSpeed <= 0)
             {
                 image_speed = 1;
                 image_index = 3;
+            }
             }
         }
         else
