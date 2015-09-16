@@ -11,7 +11,6 @@ moveSpeed = argument[3]
         if(player = obj_player.id)
         {
             mp_grid_add_instances(moveGrid,crabboss, true)
-            mp_grid_add_instances(moveGrid,objElementalParent, true)
         }
         //make an empty path
         
