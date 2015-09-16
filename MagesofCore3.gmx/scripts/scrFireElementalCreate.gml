@@ -1,4 +1,4 @@
-POW = 10
+POW = 25
 INT = 5
 SPD = 30
 

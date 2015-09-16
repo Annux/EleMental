@@ -1,7 +1,7 @@
 if(caster != obj_player.id) && (!Aftershock)
 {
     image_speed = .75
-    Damage = .5
+    Damage = 1
     enemyStunCD = 1
 }
 
