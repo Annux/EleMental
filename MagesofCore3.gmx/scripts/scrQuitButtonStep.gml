@@ -13,7 +13,7 @@ if (buttonActive = true)
         sprite_index = sprQuitHilite;
         if (mouse_check_button_pressed(mb_left))
         {
-            //quit game
+            game_end()
         }
     }
     else

@@ -5,7 +5,12 @@
   </Configs>
   <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\Loop_01</sound>
+    <sound>sound\LoopIntro_01</sound>
+    <sound>sound\MenuSound</sound>
+    <sound>sound\OverworldSound</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\spr_char</sprite>
@@ -329,6 +334,19 @@
       <script>scripts\scrBossSpawnCreate.gml</script>
       <script>scripts\scrBossSpawnStep.gml</script>
     </scripts>
+    <scripts name="Audio">
+      <scripts name="MainMenu">
+        <script>scripts\scrMenuAudioStep.gml</script>
+      </scripts>
+      <scripts name="Overworld">
+        <script>scripts\scrOverworldAudioStep.gml</script>
+      </scripts>
+      <scripts name="LevelOne">
+        <script>scripts\scrMusicCreate.gml</script>
+        <script>scripts\scrMusicStep.gml</script>
+        <script>scripts\scrAudioDestroyer.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\mainFont</font>
@@ -432,6 +450,12 @@
       <object>objects\objLandSpawner</object>
       <object>objects\objBossSpawner</object>
       <object>objects\obj_spawner_parent</object>
+    </objects>
+    <objects name="Audio">
+      <object>objects\objLevelAudio</object>
+      <object>objects\objMenuSound</object>
+      <object>objects\objOverworldSound</object>
+      <object>objects\objAudioDestroyer</object>
     </objects>
   </objects>
   <rooms name="rooms">

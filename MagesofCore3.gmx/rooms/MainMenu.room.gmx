@@ -55,6 +55,8 @@
     <instance objName="objStartButton" x="0" y="0" name="inst_D6C81B9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objQuitButton" x="0" y="0" name="inst_53903885" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objUnderbackground" x="0" y="0" name="inst_81BF7671" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevelAudio" x="64" y="32" name="inst_CEDE4347" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAudioDestroyer" x="96" y="32" name="inst_E19A7730" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
