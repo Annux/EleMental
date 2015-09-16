@@ -19,28 +19,24 @@ else if (blownBack = true)
 else if(canMove)
 {
 image_angle = direction;
-    if (isAttacking = true)
+    if (position_empty(targetX, targetY))
     {
-        //instert attack code here
-        isAttacking = false;
+        path_to_point(self.id, targetX, targetY, eSpeed)
     }
     else
     {
-        if (position_empty(targetX, targetY))
-        {
-            path_to_point(self.id, targetX, targetY, eSpeed)
-        }
-        else
-        {
-            targetX = random(room_width);
-            targetY = random(room_height);
-        }
+        targetX = random(room_width);
+        targetY = random(room_height);
     }
     if (image_index = 1) || (image_index = 4)
     {
         eSpeed = 4;
     }
-    if (image_index = 2) || (image_index = 5)
+    if (image_index = 2)
+    {
+        eSpeed = 2;
+    }
+    else if(image_index = 5)
     {
         eSpeed = 2;
     }

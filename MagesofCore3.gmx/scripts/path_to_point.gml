@@ -13,10 +13,6 @@ moveSpeed = argument[3]
             mp_grid_add_instances(moveGrid,crabboss, true)
             mp_grid_add_instances(moveGrid,objElementalParent, true)
         }
-        else if(player != obj_player.id && !instance_exists(crabboss))
-        {
-            mp_grid_add_instances(moveGrid,obj_player, true)
-        }
         //make an empty path
         
     mp_grid_path(moveGrid, movePath, player.x, player.y, target_x, target_y, true);

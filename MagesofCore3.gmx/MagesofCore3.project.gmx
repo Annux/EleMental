@@ -5,9 +5,7 @@
   </Configs>
   <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
-  <sounds name="sound">
-    <sound>sound\Loop_01</sound>
-  </sounds>
+  <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\spr_char</sprite>
@@ -243,6 +241,7 @@
         <scripts name="Earthquake">
           <script>scripts\scrEarthquakeCreate.gml</script>
           <script>scripts\scrEarthquakeStep.gml</script>
+          <script>scripts\scr_Earthquake_collision.gml</script>
         </scripts>
         <scripts name="ForcePush">
           <script>scripts\scrForcePushCreate.gml</script>
@@ -422,7 +421,6 @@
       <object>objects\obj_overlord</object>
       <object>objects\obj_shore</object>
       <object>objects\obj_hpDrop</object>
-      <object>objects\object65</object>
     </objects>
     <objects name="Boss">
       <object>objects\crabboss</object>

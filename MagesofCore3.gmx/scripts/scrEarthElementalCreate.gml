@@ -26,3 +26,7 @@ fireRatio  = .75
 earthRatio = .75
 waterRatio = 1.5
 airRatio   = .75
+
+slamTimer = room_speed
+
+alarm[1] = slamTimer 

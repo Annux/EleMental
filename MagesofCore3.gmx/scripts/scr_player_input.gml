@@ -25,7 +25,8 @@ if (sprite_index = sprEarthAttack)
     {
         view_xview[0] =  old_xview
         view_yview[0] =     old_yview
-        instance_create(x, y, objAftershock);
+        Quake = instance_create(x, y, objAftershock);
+        Quake.caster = self.id
         sprite_index =  sprPlayerIdle;
         earthQuake = false;
     }
